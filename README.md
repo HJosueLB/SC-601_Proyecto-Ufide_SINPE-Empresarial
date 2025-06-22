@@ -34,7 +34,7 @@ Este proyecto está desarrollado en **ASP.NET MVC** utilizando el enfoque **Code
 
 El desarrollo del primer modulo de **Comercio** fue desarrollado en el siguiente orden:
 
-![Flujo del Proyecto](Docs/img/flujo-proyecto.png)
+<img src="./SINPE%20Empresarial/Docs/img/Flujo%20del%20proyecto.png" alt="Flujo del Proyecto" width="500"/>
 
 #### Detalle:
 
