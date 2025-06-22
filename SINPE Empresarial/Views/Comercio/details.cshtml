@@ -1,0 +1,96 @@
+﻿@model SINPE_Empresarial.Domain.ComercioDomain.Entities.Comercio
+
+@{
+    ViewBag.Title = "Registrar Comercio";
+}
+
+<!-- Integración de CSS -->
+<link rel="stylesheet" href="~/Content/css/ComercioStyles/ComercioRegister.css" />
+
+<!-- Detalle del Comercio -->
+<div class="container-fluid bg-light min-vh-100 py-5">
+    <div class="container bg-white p-5 shadow-sm rounded-4" style="max-width: 900px;">
+
+        <!-- Encabezado -->
+        <div class="mb-4">
+            <h2 class="fw-bold">
+                @(Model.IdComercio > 0 ? "Detalles del Comercio" : "Registrar Comercio")
+            </h2>
+            <p class="text-muted mb-0">
+                @(Model.IdComercio > 0 ? "Consulta la información del comercio." : "Completa los datos para registrar un nuevo comercio.")
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Tipo de identificación -->
+            <div class="col-md-6">
+                <label class="form-label">Tipo de Identificación</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.TipoDeIdentificacion.Nombre)</p>
+            </div>
+
+            <!-- Número de identificación -->
+            <div class="col-md-6">
+                <label class="form-label">Identificación</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.Identificacion)</p>
+            </div>
+
+            <!-- Nombre del comercio -->
+            <div class="col-md-6">
+                <label class="form-label">Nombre del Comercio</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.Nombre)</p>
+            </div>
+
+            <!-- Tipo de comercio -->
+            <div class="col-md-6">
+                <label class="form-label">Tipo de Comercio</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.TipoDeComercio.Nombre)</p>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="col-md-6">
+                <label class="form-label">Teléfono</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.Telefono)</p>
+            </div>
+
+            <!-- Correo -->
+            <div class="col-md-6">
+                <label class="form-label">Correo Electrónico</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.CorreoElectronico)</p>
+            </div>
+
+            <!-- Estado -->
+            <div class="col-md-6">
+                <label class="form-label">Estado</label>
+                <p class="form-control-plaintext">
+                    @(Model.Estado ? "Activo" : "Inactivo")
+                </p>
+            </div>
+
+            <!-- Dirección -->
+            <div class="col-md-6">
+                <label class="form-label">Dirección</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.Direccion)</p>
+            </div>
+
+            <!-- Fecha de Creación -->
+            <div class="col-md-6">
+                <label class="form-label">Fecha de Creación</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.FechaDeRegistro)</p>
+            </div>
+
+            <!-- Fecha de Modificación -->
+            <div class="col-md-6">
+                <label class="form-label">Última Modificación</label>
+                <p class="form-control-plaintext">@Html.DisplayFor(m => m.FechaDeModificacion)</p>
+            </div>
+        </div>
+
+        <!-- Botón -->
+        <div class="mt-5 d-flex justify-content-end">
+            <a href="@Url.Action("Index", "Comercio")" class="btn text-white fw-bold" style="background-color: cadetblue;">
+                Regresar
+            </a>
+        </div>
+    </div>
+</div>

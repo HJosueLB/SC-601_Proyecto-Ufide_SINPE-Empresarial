@@ -1,0 +1,86 @@
+﻿@model IEnumerable<SINPE_Empresarial.Domain.ComercioDomain.Entities.Comercio>
+
+@{
+    ViewBag.Title = "Comercios";
+}
+
+<!-- Implementar SweetAlert para las ventanas emergentes -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<main>
+
+    <!-- Título de la pagina -->
+    <h1 class="mb-4"> Comercios </h1>
+
+    <!-- Barra de Opciones -->
+    <div class="fixed-table-toolbar d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+
+        <!-- Botón de registro -->
+        <a href="@Url.Action("Register", "Comercio")" class="btn text-white fw-bold" style="background-color: #574FD6;">
+            Registrar nuevo comercio
+        </a>
+
+        <!-- Futura característica a implementar -->
+        <div class="d-flex align-items-center gap-2">
+
+            <!-- Imput para busqueda -->
+            <input class="form-control" type="search" placeholder="Buscar" style="display: none;">
+
+            <!-- Botón de refrecar -->
+            <button class="btn btn-secondary" style="display: none;">
+                <i class="bi bi-arrow-clockwise"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Listado de registros -->
+    <div class="table-responsive mb-5">
+        <table class="table table-hover align-middle">
+            <!-- Encabezado -->
+            <thead class="table-light">
+                <tr>
+                    <th>Acciones</th>
+                    <th>Identificación</th>
+                    <th>Tipo</th>
+                    <th>Nombre</th>
+                    <th>Comercio</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+
+            <!-- Registros -->
+            <tbody class="table-group-divider">
+                @foreach (var comercio in Model)
+                {
+                    <tr>
+                        <td>
+                            <a href="@Url.Action("Detalles", "Comercio", new { id = comercio.IdComercio })" class="btn btn-sm btn-primary">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                            <a href="@Url.Action("Editar", "Comercio", new { id = comercio.IdComercio })" class="btn btn-sm btn-success">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                            <a class="btn btn-sm btn-danger btn-eliminar" data-id="@comercio.IdComercio">
+                                <i class="bi bi-trash-fill"></i>
+                            </a>
+                        </td>
+                        <td>@comercio.Identificacion</td>
+                        <td>@comercio.TipoDeIdentificacion.Nombre</td>
+                        <td>@comercio.Nombre</td>
+                        <td>@comercio.TipoDeComercio.Nombre</td>
+                        <td>@comercio.Telefono</td>
+                        <td>@comercio.CorreoElectronico</td>
+                        <td>@(comercio.Estado ? "Activo" : "Inactivo")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<!-- Implementar JavaScript -->
+<script src="~/Scripts/ComercioScripts/Delete.js"></script>

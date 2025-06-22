@@ -1,0 +1,37 @@
+﻿body {
+    background-color: ghostwhite;
+}
+
+.text-link {
+    color: #574FD6;
+    text-decoration: none;
+}
+
+    .text-link:hover {
+        text-decoration: underline;
+        color: #3d3aa1;
+    }
+
+.btn-primary {
+    background-color: #574FD6;
+    border-color: #574FD6;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+    .btn-primary:hover {
+        background-color: #3d3aa1;
+        border-color: #3d3aa1;
+    }
+
+.form-control-lg,
+.form-select-lg {
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.form-label {
+    font-weight: 600;
+}
+

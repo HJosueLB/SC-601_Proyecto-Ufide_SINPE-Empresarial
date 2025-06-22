@@ -1,0 +1,89 @@
+﻿@model SINPE_Empresarial.Domain.ComercioDomain.Entities.Comercio
+
+@{
+    ViewBag.Title = "Registrar Comercio";
+}
+
+<!-- Integración de CSS -->
+<link rel="stylesheet" href="~/Content/css/ComercioStyles/ComercioRegister.css" />
+
+<!-- Formulario de reigstro de un nuevo comercio -->
+<div class="container-fluid bg-light min-vh-100 py-5">
+    <div class="container bg-white p-5 shadow-sm rounded-4" style="max-width: 900px;">
+
+        <!-- Encabezado de formulario -->
+        <div class="mb-4">
+            <h2 class="fw-bold">Registrar Comercio</h2>
+            <p class="text-muted mb-0">Completa los datos para registrar un nuevo comercio en el sistema.</p>
+        </div>
+
+        <!-- Validación -->
+        @using (Html.BeginForm("Register", "Comercio", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row g-4">
+
+                <!-- Tipo de identificación -->
+                <div class="col-md-6">
+                    <label for="TipoDeIdentificacionId" class="form-label">Tipo de Identificación</label>
+                    @Html.DropDownList("TipoDeIdentificacionId", null, "Seleccione una opción", new { @class = "form-select form-select-lg" })
+                    @Html.ValidationMessageFor(m => m.TipoDeIdentificacionId, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Número de identificación -->
+                <div class="col-md-6">
+                    <label for="Identificacion" class="form-label">Identificación</label>
+                    @Html.TextBoxFor(m => m.Identificacion, new { @class = "form-control form-control-lg", placeholder = "Ej: 1-2345-6789" })
+                    @Html.ValidationMessageFor(m => m.Identificacion, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Nombre del comercio -->
+                <div class="col-md-6">
+                    <label for="Nombre" class="form-label">Nombre del Comercio</label>
+                    @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control form-control-lg", placeholder = "Nombre del comercio" })
+                    @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Tipo de comercio -->
+                <div class="col-md-6">
+                    <label for="TipoDeComercioId" class="form-label">Tipo de Comercio</label>
+                    @Html.DropDownList("TipoDeComercioId", null, "Seleccione una opción", new { @class = "form-select form-select-lg" })
+                    @Html.ValidationMessageFor(m => m.TipoDeComercioId, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Teléfono -->
+                <div class="col-md-6">
+                    <label for="Telefono" class="form-label">Teléfono</label>
+                    @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control form-control-lg", placeholder = "Teléfono de contacto" })
+                    @Html.ValidationMessageFor(m => m.Telefono, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Correo -->
+                <div class="col-md-6">
+                    <label for="CorreoElectronico" class="form-label">Correo Electrónico</label>
+                    @Html.TextBoxFor(m => m.CorreoElectronico, new { @class = "form-control form-control-lg", placeholder = "Correo electrónico" })
+                    @Html.ValidationMessageFor(m => m.CorreoElectronico, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Dirección -->
+                <div class="col-12">
+                    <label for="Direccion" class="form-label">Dirección</label>
+                    @Html.TextAreaFor(m => m.Direccion, new { @class = "form-control form-control-lg", rows = 2, placeholder = "Dirección física del comercio" })
+                    @Html.ValidationMessageFor(m => m.Direccion, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Botones -->
+                <div class="col-12 d-flex justify-content-between flex-wrap gap-3">
+                    <button type="submit" class="btn text-white fw-bold" style="background-color: #574FD6;">
+                        Registrar
+                    </button>
+
+                    <a href="@Url.Action("Index", "Comercio")" class="btn text-white fw-bold" style="background-color: cadetblue;">
+                        Regresar
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
