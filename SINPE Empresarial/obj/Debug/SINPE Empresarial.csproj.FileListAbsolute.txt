@@ -1,0 +1,136 @@
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\SINPE Empresarial.dll.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\SINPE Empresarial.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\SINPE Empresarial.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\csc.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\csc.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\csc.rsp
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\csi.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\csi.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\csi.rsp
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Buffers.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Memory.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\vbc.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\vbc.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\vbc.rsp
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\VBCSCompiler.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Antlr3.Runtime.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\EntityFramework.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\EntityFramework.SqlServer.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Newtonsoft.Json.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Helpers.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Mvc.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Optimization.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Razor.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.WebPages.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Razor.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\WebGrease.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\EntityFramework.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\EntityFramework.SqlServer.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Helpers.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Mvc.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Razor.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.WebPages.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Razor.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\System.Web.Optimization.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Newtonsoft.Json.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\bin\Antlr3.Runtime.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.AssemblyReference.cache
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.CoreCompileInputs.cache
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE Em.1B47B1D6.Up2Date
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.InitialCreate.resources
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.ComercioConRelaciones.resources
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.ComercioUpd.resources
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\SINPE Empresarial.dll.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\SINPE Empresarial.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\SINPE Empresarial.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\csc.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\csc.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\csc.rsp
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\csi.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\csi.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\csi.rsp
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Buffers.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Memory.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\vbc.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\vbc.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\vbc.rsp
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\VBCSCompiler.exe
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Antlr3.Runtime.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\EntityFramework.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\EntityFramework.SqlServer.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Newtonsoft.Json.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Helpers.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Mvc.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Optimization.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Razor.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.WebPages.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.WebPages.Razor.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\WebGrease.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\EntityFramework.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\EntityFramework.SqlServer.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Helpers.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Mvc.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Razor.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.WebPages.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.WebPages.Razor.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\System.Web.Optimization.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Newtonsoft.Json.xml
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\bin\Antlr3.Runtime.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.AssemblyReference.cache
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.CoreCompileInputs.cache
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Em.1B47B1D6.Up2Date
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.dll
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.InitialCreate.resources
+C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache
