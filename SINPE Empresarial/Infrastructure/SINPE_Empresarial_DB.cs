@@ -1,4 +1,5 @@
 using SINPE_Empresarial.Domain.ComercioDomain.Entities;
+using SINPE_Empresarial.Domain.SinpeDomain.Entities;
 using System;
 using System.Data.Entity;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace SINPE_Empresarial
         // DbSet: Mapear la tabla de la entidad TipoDeComercio
         public DbSet<TipoDeComercio> TipoDeComercio { get; set; }
 
+        public DbSet<Sinpe> Sinpe { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -29,6 +32,7 @@ namespace SINPE_Empresarial
             modelBuilder.Entity<Comercio>().ToTable("Comercio");
             modelBuilder.Entity<TipoDeComercio>().ToTable("TipoDeComercio");
             modelBuilder.Entity<TipoDeIdentificacion>().ToTable("TipoDeIdentificacion");
+            modelBuilder.Entity<Sinpe>().ToTable("Sinpe");
         }
 
     }

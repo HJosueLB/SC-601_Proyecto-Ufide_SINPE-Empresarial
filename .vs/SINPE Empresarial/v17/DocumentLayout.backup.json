@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Projects\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\controllers\\sinpecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\controllers\\sinpecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\controllers\\comerciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\controllers\\comerciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\services\\sinpeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\services\\sinpeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SinpeService.cs",
+              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Services\\SinpeService.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Services\\SinpeService.cs",
+              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Services\\SinpeService.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Services\\SinpeService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T23:51:04.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ComercioController.cs",
+              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\ComercioController.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Controllers\\ComercioController.cs",
+              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\ComercioController.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Controllers\\ComercioController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAuwD0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T23:24:14.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SinpeController.cs",
+              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\SinpeController.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Controllers\\SinpeController.cs",
+              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\SinpeController.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Controllers\\SinpeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAADkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T23:24:16.398Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

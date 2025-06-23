@@ -1,0 +1,54 @@
+﻿@model SINPE_Empresarial.Domain.SinpeDomain.Entities.Sinpe
+
+@{
+    ViewData["Title"] = "Registrar Pago SINPE";
+}
+
+<h2>Registrar Pago Electrónico</h2>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success">@TempData["mensaje"]</div>
+}
+
+<form asp-action="Registrar" method="post">
+    <div class="form-group">
+        <label asp-for="TelefonoOrigen"></label>
+        <input asp-for="TelefonoOrigen" class="form-control" />
+        <span asp-validation-for="TelefonoOrigen" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NombreOrigen"></label>
+        <input asp-for="NombreOrigen" class="form-control" />
+        <span asp-validation-for="NombreOrigen" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TelefonoDestinatario"></label>
+        <input asp-for="TelefonoDestinatario" class="form-control" />
+        <span asp-validation-for="TelefonoDestinatario" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NombreDestinatario"></label>
+        <input asp-for="NombreDestinatario" class="form-control" />
+        <span asp-validation-for="NombreDestinatario" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Monto"></label>
+        <input asp-for="Monto" class="form-control" />
+        <span asp-validation-for="Monto" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion"></label>
+        <input asp-for="Descripcion" class="form-control" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrar Pago</button>
+</form>
+
+

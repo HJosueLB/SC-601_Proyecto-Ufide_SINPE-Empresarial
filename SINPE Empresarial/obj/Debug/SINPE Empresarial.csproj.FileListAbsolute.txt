@@ -134,3 +134,71 @@ C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Program
 C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.pdb
 C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.InitialCreate.resources
 C:\Users\harly\Documents\Visual Studio 2022\Projects\SINPE Empresarial - Programación Avanzada\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\SINPE Empresarial.dll.config
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\SINPE Empresarial.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\SINPE Empresarial.pdb
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\csc.exe
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\csc.exe.config
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\csc.rsp
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\csi.exe
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\csi.exe.config
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\csi.rsp
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Buffers.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Memory.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\vbc.exe
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\vbc.exe.config
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\vbc.rsp
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\VBCSCompiler.exe
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Antlr3.Runtime.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\EntityFramework.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\EntityFramework.SqlServer.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Newtonsoft.Json.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Helpers.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Mvc.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Optimization.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Razor.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.WebPages.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Razor.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\WebGrease.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\EntityFramework.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\EntityFramework.SqlServer.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Helpers.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Mvc.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Razor.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.WebPages.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.WebPages.Razor.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Optimization.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Newtonsoft.Json.xml
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Antlr3.Runtime.pdb
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.AssemblyReference.cache
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.InitialCreate.resources
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.CoreCompileInputs.cache
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Em.1B47B1D6.Up2Date
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.dll
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.pdb
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.ProyectoLau.resources
