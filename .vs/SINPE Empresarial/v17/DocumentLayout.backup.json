@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\202506230031143_proyectolau1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\202506230031143_proyectolau1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\202506222157376_proyectolau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\202506222157376_proyectolau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\202506220455530_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\202506220455530_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\laura\\desktop\\fidelitas\\vi cuatrimestre\\programaci\u00F3n avanzada\\proyecto\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\views\\comercio\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\views\\comercio\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "202506230031143_ProyectoLau1.cs",
-              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202506230031143_ProyectoLau1.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\202506230031143_ProyectoLau1.cs",
-              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202506230031143_ProyectoLau1.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Migrations\\202506230031143_ProyectoLau1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T00:31:19.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "202506222157376_ProyectoLau.cs",
-              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202506222157376_ProyectoLau.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\202506222157376_ProyectoLau.cs",
-              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202506222157376_ProyectoLau.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Migrations\\202506222157376_ProyectoLau.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwBwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T00:18:32.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "202506220455530_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202506220455530_InitialCreate.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\202506220455530_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202506220455530_InitialCreate.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Migrations\\202506220455530_InitialCreate.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T00:16:28.067Z",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Comercio\\Register.cshtml",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Views\\Comercio\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Laura\\Desktop\\Fidelitas\\VI Cuatrimestre\\Programaci\u00F3n Avanzada\\Proyecto\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Comercio\\Register.cshtml",
+              "RelativeToolTip": "SINPE Empresarial\\Views\\Comercio\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T00:33:59.357Z",
               "EditorCaption": ""
             }
           ]

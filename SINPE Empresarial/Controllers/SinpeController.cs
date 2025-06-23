@@ -29,7 +29,11 @@ namespace SINPE_Empresarial.Controllers
         public ActionResult Register(Sinpe sinpe)
         {
             if (!ModelState.IsValid)
+            {
+                TempData["ErrorMessage"] = "Revisa los campos del formulario.";
                 return View(sinpe);
+            }
+                
 
             // Validación simulada: verificar que la caja exista y esté activa
             bool cajaValida = VerificarCaja(sinpe.TelefonoDestinatario);
@@ -44,6 +48,7 @@ namespace SINPE_Empresarial.Controllers
             sinpe.Estado = false; // No sincronizado
 
             _sinpeService.Registrar(sinpe);
+            TempData["SuccessMessage"] = "Pago registrado exitosamente.";
             return RedirectToAction("Register");
         }
 
