@@ -202,3 +202,4 @@ C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto
 C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.dll
 C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.pdb
 C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.ProyectoLau.resources
+C:\Users\Laura\Desktop\Fidelitas\VI Cuatrimestre\Programación Avanzada\Proyecto\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.ProyectoLau1.resources

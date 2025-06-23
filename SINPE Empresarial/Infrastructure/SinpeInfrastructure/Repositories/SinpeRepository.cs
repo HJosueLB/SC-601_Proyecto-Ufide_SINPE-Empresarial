@@ -1,5 +1,4 @@
-﻿using SINPE_Empresarial.Domain.ComercioDomain.Entities;
-// Llamar carpeta de clases Entities - Interfaces de Comercio.
+﻿// Llamar carpeta de clases Entities - Interfaces de Comercio.
 using SINPE_Empresarial.Domain.SinpeDomain.Entities;
 using SINPE_Empresarial.Domain.SinpeDomain.Interfaces;
 using System;

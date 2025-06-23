@@ -1,14 +1,8 @@
-﻿using SINPE_Empresarial.Domain.ComercioDomain.Entities;
+﻿// Llamar a las interfaces y entidades de Sinpe.
 using SINPE_Empresarial.Domain.SinpeDomain.Entities;
-// Llamar a las interfaces y entidades de Sinpe.
-using SINPE_Empresarial.Domain.SinpeDomain.Interfaces;
-using SINPE_Empresarial.Infrastructure.ComercioInfrastructure.Repositories;
 using SINPE_Empresarial.Infrastructure.SinpeInfrastructure.Repositories;
 using SINPE_Empresarial.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 
