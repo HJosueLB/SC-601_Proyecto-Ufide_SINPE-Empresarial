@@ -33,14 +33,14 @@ namespace SINPE_Empresarial.Controllers
                 TempData["ErrorMessage"] = "Revisa los campos del formulario.";
                 return View(sinpe);
             }
-                
+
 
             // Validación simulada: verificar que la caja exista y esté activa
             bool cajaValida = VerificarCaja(sinpe.TelefonoDestinatario);
 
             if (!cajaValida)
             {
-                ModelState.AddModelError("", "No se puede registrar el pago: la caja está inactiva o no tiene teléfono registrado.");
+                TempData["ErrorMessage"] = "No se puede registrar el pago: la caja está inactiva o no tiene teléfono registrado.";
                 return View(sinpe);
             }
 
