@@ -1,0 +1,58 @@
+@model IEnumerable<SINPE_Empresarial.Domain.SinpeDomain.Entities.Sinpe>
+
+@{
+    ViewBag.Title = "SINPE de la Caja";
+}
+
+<!-- Integración de CSS -->
+<link rel="stylesheet" href="~/Content/css/SinpeStyles/SinpeList.css" />
+
+<!-- Contenedor de la lista de SINPE -->
+<div class="container-fluid bg-light min-vh-100 py-5">
+    <div class="container bg-white p-5 shadow-sm rounded-4" style="max-width: 900px;">
+
+        <!-- Encabezado de la lista -->
+        <div class="mb-4">
+            <h2 class="fw-bold">SINPE de la Caja</h2>
+            <p class="text-muted mb-0">A continuación se muestra la lista de SINPE asociados a esta caja.</p>
+        </div>
+
+        <!-- Tabla de SINPE -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Teléfono Origen</th>
+                    <th>Nombre Origen</th>
+                    <th>Teléfono Destinatario</th>
+                    <th>Nombre Destinatario</th>
+                    <th>Monto</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sinpe in Model)
+                {
+                <tr>
+                    <td>@sinpe.TelefonoOrigen</td>
+                    <td>@sinpe.NombreOrigen</td>
+                    <td>@sinpe.TelefonoDestinatario</td>
+                    <td>@sinpe.NombreDestinatario</td>
+                    <td>@sinpe.Monto.ToString("C")</td>
+                    <td>@sinpe.Descripcion</td>
+                    <td>@sinpe.Fecha.ToShortDateString()</td>
+                    <td>@(sinpe.Estado ? "Sincronizado" : "No Sincronizado")</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Botón para regresar -->
+        <div class="d-flex justify-content-end">
+            <a href="@Url.Action("Index", "Cajas")" class="btn text-white fw-bold" style="background-color: cadetblue;">
+                Regresar
+            </a>
+        </div>
+    </div>
+</div>

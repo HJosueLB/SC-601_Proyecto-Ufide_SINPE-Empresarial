@@ -1,0 +1,57 @@
+@model IEnumerable<SINPE_Empresarial.Domain.ComercioDomain.Entities.Caja>
+
+@{
+    ViewBag.Title = "Lista de Cajas";
+}
+
+<!-- Integración de CSS -->
+<link rel="stylesheet" href="~/Content/css/CajaStyles/CajaList.css" />
+
+<!-- Contenedor de la lista de cajas -->
+<div class="container-fluid bg-light min-vh-100 py-5">
+    <div class="container bg-white p-5 shadow-sm rounded-4" style="max-width: 900px;">
+
+        <!-- Encabezado de la lista -->
+        <div class="mb-4">
+            <h2 class="fw-bold">Lista de Cajas</h2>
+            <p class="text-muted mb-0">A continuación se muestra la lista de cajas registradas.</p>
+        </div>
+
+        <!-- Tabla de cajas -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Teléfono SINPE</th>
+                    <th>Fecha de Registro</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var caja in Model)
+                {
+                <tr>
+                    <td>@caja.Nombre</td>
+                    <td>@caja.Descripcion.Substring(0, 10) + "..."</td>
+                    <td>@caja.TelefonoSINPE</td>
+                    <td>@caja.FechaDeRegistro.ToShortDateString()</td>
+                    <td>@(caja.Estado ? "Activo" : "Inactivo")</td>
+                    <td>
+                        <a href="@Url.Action("Editar", "Cajas", new { id = caja.IdCaja })" class="btn btn-warning btn-sm">Editar</a>
+                        <a href="@Url.Action("ObtenerSinpePorCaja", "Cajas", new { idCaja = caja.IdCaja })" class="btn btn-info btn-sm">Ver SINPE</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Botón para registrar nueva caja -->
+        <div class="d-flex justify-content-end">
+            <a href="@Url.Action("Registrar", "Cajas")" class="btn text-white fw-bold" style="background-color: #574FD6;">
+                Registrar Nueva Caja
+            </a>
+        </div>
+    </div>
+</div>
