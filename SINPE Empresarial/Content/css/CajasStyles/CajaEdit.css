@@ -1,0 +1,52 @@
+﻿body {
+    background-color: ghostwhite;
+}
+
+.text-link {
+    color: #574FD6;
+    text-decoration: none;
+}
+
+    .text-link:hover {
+        text-decoration: underline;
+        color: #3d3aa1;
+    }
+
+.btn-primary {
+    background-color: #574FD6;
+    border-color: #574FD6;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+    .btn-primary:hover {
+        background-color: #3d3aa1;
+        border-color: #3d3aa1;
+    }
+
+.btn-secondary {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+    .btn-secondary:hover {
+        background-color: #46818a;
+        border-color: #46818a;
+    }
+
+.form-control-lg,
+.form-select-lg {
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.text-danger {
+    font-size: 0.9rem;
+}

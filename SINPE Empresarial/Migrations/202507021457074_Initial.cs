@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
@@ -21,6 +21,23 @@
                         DatosPosteriores = c.String(),
                     })
                 .PrimaryKey(t => t.IdEvento);
+            
+            CreateTable(
+                "dbo.Cajas",
+                c => new
+                    {
+                        IdCaja = c.Int(nullable: false, identity: true),
+                        IdComercio = c.Int(nullable: false),
+                        Nombre = c.String(nullable: false, maxLength: 100),
+                        Descripcion = c.String(nullable: false, maxLength: 150),
+                        TelefonoSINPE = c.String(nullable: false, maxLength: 10),
+                        FechaDeRegistro = c.DateTime(nullable: false),
+                        FechaDeModificacion = c.DateTime(),
+                        Estado = c.Boolean(nullable: false),
+                    })
+                .PrimaryKey(t => t.IdCaja)
+                .ForeignKey("dbo.Comercio", t => t.IdComercio, cascadeDelete: true)
+                .Index(t => t.IdComercio);
             
             CreateTable(
                 "dbo.Comercio",
@@ -82,14 +99,17 @@
         
         public override void Down()
         {
+            DropForeignKey("dbo.Cajas", "IdComercio", "dbo.Comercio");
             DropForeignKey("dbo.Comercio", "TipoDeIdentificacionId", "dbo.TipoDeIdentificacion");
             DropForeignKey("dbo.Comercio", "TipoDeComercioId", "dbo.TipoDeComercio");
             DropIndex("dbo.Comercio", new[] { "TipoDeComercioId" });
             DropIndex("dbo.Comercio", new[] { "TipoDeIdentificacionId" });
+            DropIndex("dbo.Cajas", new[] { "IdComercio" });
             DropTable("dbo.Sinpe");
             DropTable("dbo.TipoDeIdentificacion");
             DropTable("dbo.TipoDeComercio");
             DropTable("dbo.Comercio");
+            DropTable("dbo.Cajas");
             DropTable("dbo.BITACORA_EVENTOS");
         }
     }

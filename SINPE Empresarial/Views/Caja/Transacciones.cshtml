@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SINPE_Empresarial.Domain.SinpeDomain.Entities.Sinpe>
+
+@{
+    ViewBag.Title = "Transacciones SINPE de la Caja";
+}
+
+<h2 class="mb-4">Transacciones SINPE para el número: @ViewBag.TelefonoSINPE</h2>
+
+@if (!Model.Any())
+{
+    <p class="text-muted">No se han realizado transacciones para esta caja.</p>
+}
+else
+{
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Teléfono Origen</th>
+                <th>Nombre Origen</th>
+                <th>Monto</th>
+                <th>Fecha</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.TelefonoOrigen</td>
+                    <td>@s.NombreOrigen</td>
+                    <td>₡@s.Monto.ToString("N2")</td>
+                    <td>@s.FechaDeRegistro.ToString("dd/MM/yyyy hh:mm tt")</td>
+                    <td>@s.Descripcion</td>
+                    <td>@(s.Estado ? "Sincronizado" : "No sincronizado")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

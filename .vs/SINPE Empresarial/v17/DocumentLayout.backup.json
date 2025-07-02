@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\controllers\\cajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\controllers\\cajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\202507021357567_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\202507021357567_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\domain\\cajadomain\\interfaces\\cajainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\domain\\cajadomain\\interfaces\\cajainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\domain\\comerciodomain\\entities\\comercio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\domain\\comerciodomain\\entities\\comercio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\views\\caja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\views\\caja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,44 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Query.sql ",
-              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Infrastructure\\Query.sql",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Infrastructure\\Query.sql",
-              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Infrastructure\\Query.sql",
-              "RelativeToolTip": "SINPE Empresarial\\Infrastructure\\Query.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-07-02T14:01:17.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "202507021357567_initial.cs",
-              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
-              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
+              "Title": "CajaInterface.cs",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T13:58:08.874Z",
+              "WhenOpened": "2025-07-02T15:19:58.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Comercio.cs",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T13:57:29.235Z",
+              "WhenOpened": "2025-07-02T15:14:46.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CajaController.cs",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\CajaController.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Controllers\\CajaController.cs",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\CajaController.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Controllers\\CajaController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T15:11:33.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Caja\\Index.cshtml",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Views\\Caja\\Index.cshtml",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Caja\\Index.cshtml",
+              "RelativeToolTip": "SINPE Empresarial\\Views\\Caja\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T15:07:29.248Z",
               "EditorCaption": ""
             }
           ]

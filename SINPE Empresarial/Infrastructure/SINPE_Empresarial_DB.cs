@@ -22,11 +22,14 @@ namespace SINPE_Empresarial
         // DbSet: Mapear la tabla de la entidad TipoDeComercio
         public DbSet<TipoDeComercio> TipoDeComercio { get; set; }
 
+        // DbSet: Mapear la tabla de la entidad Caja
+        public DbSet<Caja> Cajas { get; set; }
+
         // DbSet: Mapear la tabla de la entidad Sinpe
         public DbSet<Sinpe> Sinpe { get; set; }
 
         // DbSet: Mapear la tabla de la entidad BitacoraEvento
-        public DbSet<BitacoraEvento> BitacoraEventos { get; set; } // Nueva línea añadida
+        public DbSet<BitacoraEvento> BitacoraEventos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
