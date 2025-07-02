@@ -141,9 +141,9 @@
     <Compile Include="Infrastructure\CatalogoInfrastructure\Repositories\CatalogoRopository.cs" />
     <Compile Include="Infrastructure\ComercioInfrastructure\Repositories\ComercioRepository.cs" />
     <Compile Include="Infrastructure\SinpeInfrastructure\Repositories\SinpeRepository.cs" />
-    <Compile Include="Migrations\202507020353135_Initial.cs" />
-    <Compile Include="Migrations\202507020353135_Initial.Designer.cs">
-      <DependentUpon>202507020353135_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202507021357567_initial.cs" />
+    <Compile Include="Migrations\202507021357567_initial.Designer.cs">
+      <DependentUpon>202507021357567_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -246,8 +246,8 @@
     <Content Include="Scripts\jquery-3.7.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202507020353135_Initial.resx">
-      <DependentUpon>202507020353135_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202507021357567_initial.resx">
+      <DependentUpon>202507021357567_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

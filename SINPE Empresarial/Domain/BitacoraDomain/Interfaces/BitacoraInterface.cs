@@ -8,7 +8,7 @@ using System.Web;
 
 namespace SINPE_Empresarial.Domain.BitacoraDomain.Interfaces
 {
-    public class BitacoraInterface
+    public interface BitacoraInterface
     {
         Task RegistrarEvento(BitacoraEvento evento);
         Task<IEnumerable<BitacoraEvento>> ObtenerTodosLosEventos();

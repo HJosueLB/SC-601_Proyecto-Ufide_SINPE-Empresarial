@@ -13,7 +13,7 @@ namespace SINPE_Empresarial.Infrastructure.BitacoraInfrastructure.Repositories
 {
     public class BitacoraRepository : BitacoraInterface
     {
-        private readonly SINPE_Empresarial_DB _context;
+        public readonly SINPE_Empresarial_DB _context;
 
         public BitacoraRepository(SINPE_Empresarial_DB context)
         {

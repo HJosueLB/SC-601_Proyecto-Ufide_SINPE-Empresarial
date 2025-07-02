@@ -12,7 +12,7 @@ namespace SINPE_Empresarial.Services
 {
     public class BitacoraService
     {
-        private readonly BitacoraInterface _bitacoraRepository;
+        public readonly BitacoraInterface _bitacoraRepository;
 
         public BitacoraService(BitacoraInterface bitacoraRepository)
         {

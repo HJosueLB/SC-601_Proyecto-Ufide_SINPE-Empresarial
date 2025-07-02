@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\",
+  "WorkspaceRootPath": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\controllers\\comerciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\controllers\\comerciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\controllers\\bitacoracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\controllers\\bitacoracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\202507021357567_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\202507021357567_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\domain\\comerciodomain\\entities\\comercio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\domain\\comerciodomain\\entities\\comercio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\services\\bitacoraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\services\\bitacoraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\views\\bitacora\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\views\\bitacora\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\services\\comercioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\services\\comercioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\domain\\bitacoradomain\\interfaces\\bitacorainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\domain\\bitacoradomain\\interfaces\\bitacorainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\pchacon\\onedrive - auto mercado s.a\\documentos\\github\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\infrastructure\\bitacorainfrastructure\\repositories\\bitacorarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\infrastructure\\bitacorainfrastructure\\repositories\\bitacorarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\infrastructure\\query.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Comercio.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T05:13:13.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Bitacora\\Index.cshtml",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Views\\Bitacora\\Index.cshtml",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Bitacora\\Index.cshtml",
-              "RelativeToolTip": "SINPE Empresarial\\Views\\Bitacora\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T05:11:04.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ComercioController.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\ComercioController.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Controllers\\ComercioController.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\ComercioController.cs*",
-              "RelativeToolTip": "SINPE Empresarial\\Controllers\\ComercioController.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T04:58:58.666Z",
+              "Title": "Query.sql ",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Infrastructure\\Query.sql",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Infrastructure\\Query.sql",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Infrastructure\\Query.sql",
+              "RelativeToolTip": "SINPE Empresarial\\Infrastructure\\Query.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-02T14:01:17.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BitacoraController.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\BitacoraController.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Controllers\\BitacoraController.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\BitacoraController.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Controllers\\BitacoraController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T04:57:12.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ComercioService.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Services\\ComercioService.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Services\\ComercioService.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Services\\ComercioService.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Services\\ComercioService.cs",
+              "Title": "202507021357567_initial.cs",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Migrations\\202507021357567_initial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T04:56:16.73Z",
+              "WhenOpened": "2025-07-02T13:58:08.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BitacoraService.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Services\\BitacoraService.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Services\\BitacoraService.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Services\\BitacoraService.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Services\\BitacoraService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "SINPE Empresarial\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "SINPE Empresarial\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T04:51:53.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BitacoraRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Infrastructure\\BitacoraInfrastructure\\Repositories\\BitacoraRepository.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Infrastructure\\BitacoraInfrastructure\\Repositories\\BitacoraRepository.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Infrastructure\\BitacoraInfrastructure\\Repositories\\BitacoraRepository.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Infrastructure\\BitacoraInfrastructure\\Repositories\\BitacoraRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T04:23:18.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BitacoraInterface.cs",
-              "DocumentMoniker": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\BitacoraDomain\\Interfaces\\BitacoraInterface.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Domain\\BitacoraDomain\\Interfaces\\BitacoraInterface.cs",
-              "ToolTip": "C:\\Users\\pchacon\\OneDrive - Auto Mercado S.A\\Documentos\\GitHub\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\BitacoraDomain\\Interfaces\\BitacoraInterface.cs*",
-              "RelativeToolTip": "SINPE Empresarial\\Domain\\BitacoraDomain\\Interfaces\\BitacoraInterface.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T04:05:31.886Z",
+              "WhenOpened": "2025-07-02T13:57:29.235Z",
               "EditorCaption": ""
             }
           ]

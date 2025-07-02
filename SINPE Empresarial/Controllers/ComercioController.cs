@@ -1,7 +1,6 @@
 ﻿// Llamar a las interfaces y entidades.
 using SINPE_Empresarial.Domain.CatalogoDomain.Interfaces;
 using SINPE_Empresarial.Domain.ComercioDomain.Entities;
-using SINPE_Empresarial.Infrastructure.BitacoraInfrastructure.Repositories;
 using SINPE_Empresarial.Infrastructure.CatalogoInfrastructure.Repositories;
 using SINPE_Empresarial.Infrastructure.ComercioInfrastructure.Repositories;
 using SINPE_Empresarial.Services;
@@ -15,14 +14,12 @@ namespace SINPE_Empresarial.Controllers
 {
     public class ComercioController : Controller
     {
+
         // Instancia: Servicio de comercio
         private readonly ComercioService _comercioService;
 
-        // Instancia: Servicio de catálogo
+        // Instancia: Servicio de catagolo
         private readonly CatalogoInterface _catalogoService;
-
-        // Instancia: Servicio de bitácora
-        private readonly BitacoraService _bitacoraService;
 
         public ComercioController()
         {
@@ -32,11 +29,9 @@ namespace SINPE_Empresarial.Controllers
             // Instancia: Servicio con el repositorio de Catalogo
             _catalogoService = new CatalogoRepository();
 
-            // Instancia: Servicio de bitácora
-            _bitacoraService = new BitacoraService(new BitacoraRepository());
         }
 
-        // Método GET: Obtener todos los registros de la entidad 'Comercio'.
+        // Método GET: Obtener todo los registros de la entidad 'Comercio'.
         public ActionResult Index()
         {
             var comercios = _comercioService.ObtenerTodos();
@@ -63,15 +58,6 @@ namespace SINPE_Empresarial.Controllers
                 if (ModelState.IsValid)
                 {
                     _comercioService.Registrar(comercio);
-
-                    // Registrar evento en la bitácora
-                    _bitacoraService.RegistrarEvento(
-                        "Comercio",
-                        "Registrar",
-                        $"Se ha registrado un nuevo comercio con ID: {comercio.IdComercio}",
-                        datosPosteriores: comercio // Datos nuevos
-                    );
-
                     return RedirectToAction("Index");
                 }
             }
@@ -87,28 +73,13 @@ namespace SINPE_Empresarial.Controllers
             return View(comercio);
         }
 
-        // Método POST: Eliminar un comercio por ID.
+        // Método Post: Eliminar un comercio por ID.
         [HttpPost]
         public ActionResult Eliminar(int id)
         {
             try
             {
-                var comercioAEliminar = _comercioService.ObtenerPorId(id);
-                if (comercioAEliminar == null)
-                {
-                    return Json(new { success = false, mensaje = "Comercio no encontrado." });
-                }
-
                 _comercioService.Eliminar(id);
-
-                // Registrar evento en la bitácora
-                _bitacoraService.RegistrarEvento(
-                    "Comercio",
-                    "Eliminar",
-                    $"Se ha eliminado el comercio con ID: {id}",
-                    datosAnteriores: comercioAEliminar // Datos anteriores
-                );
-
                 return Json(new { success = true, mensaje = "Comercio eliminado correctamente." });
             }
             catch (Exception ex)
@@ -142,32 +113,7 @@ namespace SINPE_Empresarial.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var comercioExistente = _comercioService.ObtenerPorId(comercio.IdComercio);
-                    if (comercioExistente == null)
-                    {
-                        return HttpNotFound();
-                    }
-
-                    // Clonar el objeto existente para DatosAnteriores
-                    var datosAnteriores = new Comercio
-                    {
-                        IdComercio = comercioExistente.IdComercio,
-                        Nombre = comercioExistente.Nombre,
-                        // Copiar todas las propiedades relevantes
-                        // ...
-                    };
-
                     _comercioService.Actualizar(comercio);
-
-                    // Registrar evento en la bitácora
-                    _bitacoraService.RegistrarEvento(
-                        "Comercio",
-                        "Editar",
-                        $"Se ha editado el comercio con ID: {comercio.IdComercio}",
-                        datosAnteriores: datosAnteriores,
-                        datosPosteriores: comercio // Datos nuevos
-                    );
-
                     return RedirectToAction("Index");
                 }
             }
@@ -176,7 +122,6 @@ namespace SINPE_Empresarial.Controllers
                 ModelState.AddModelError("", ex.Message);
             }
 
-            // En caso de error, recargar combos
             ViewBag.TipoDeComercioId = new SelectList(_catalogoService.ObtenerTipoDeComercio(), "Id", "Nombre", comercio.TipoDeComercioId);
             ViewBag.TipoDeIdentificacionId = new SelectList(_catalogoService.ObtenerTipoDeIdentificacion(), "Id", "Nombre", comercio.TipoDeIdentificacionId);
 
@@ -191,5 +136,7 @@ namespace SINPE_Empresarial.Controllers
 
             return View("Details", comercio);
         }
+
+
     }
 }
