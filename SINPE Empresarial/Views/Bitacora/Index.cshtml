@@ -1,0 +1,47 @@
+@model IEnumerable<SINPE_Empresarial.Domain.BitacoraDomain.Entities.BitacoraEvento>
+
+@{
+    ViewBag.Title = "Bitácora de Eventos";
+}
+
+<h2>Bitácora de Eventos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.IdEvento)</th>
+            <th>@Html.DisplayNameFor(model => model.TablaDeEvento)</th>
+            <th>@Html.DisplayNameFor(model => model.TipoDeEvento)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaDeEvento)</th>
+            <th>@Html.DisplayNameFor(model => model.DescripcionDeEvento)</th>
+            <th>@Html.DisplayNameFor(model => model.StackTrace)</th>
+            <th>@Html.DisplayNameFor(model => model.DatosAnteriores)</th>
+            <th>@Html.DisplayNameFor(model => model.DatosPosteriores)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.IdEvento)</td>
+                <td>@Html.DisplayFor(modelItem => item.TablaDeEvento)</td>
+                <td>@Html.DisplayFor(modelItem => item.TipoDeEvento)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaDeEvento)</td>
+                <td>@Html.DisplayFor(modelItem => item.DescripcionDeEvento)</td>
+                <td>@Html.DisplayFor(modelItem => item.StackTrace)</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.DatosAnteriores))
+                    {
+                        <pre><code>@Html.Raw(Json.Encode(Newtonsoft.Json.JsonConvert.DeserializeObject(item.DatosAnteriores)))</code></pre>
+                    }
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.DatosPosteriores))
+                    {
+                        <pre><code>@Html.Raw(Json.Encode(Newtonsoft.Json.JsonConvert.DeserializeObject(item.DatosPosteriores)))</code></pre>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
