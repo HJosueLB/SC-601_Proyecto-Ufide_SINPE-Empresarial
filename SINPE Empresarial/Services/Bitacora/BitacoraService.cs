@@ -8,9 +8,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace SINPE_Empresarial.Services
+namespace SINPE_Empresarial.Services.Bitacora
 {
-    public class BitacoraService
+    public class BitacoraService : IBitacoraManager
     {
         public readonly BitacoraInterface _bitacoraRepository;
 
@@ -41,7 +41,7 @@ namespace SINPE_Empresarial.Services
             await _bitacoraRepository.RegistrarEvento(evento);
         }
 
-        public async Task<IEnumerable<BitacoraEvento>> GetBitacoraEventos()
+        public async Task<IEnumerable<BitacoraEvento>> ObtenerEventos()
         {
             return await _bitacoraRepository.ObtenerTodosLosEventos();
         }

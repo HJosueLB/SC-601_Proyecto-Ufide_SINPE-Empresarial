@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\controllers\\cajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\controllers\\cajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\domain\\cajadomain\\interfaces\\cajainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\domain\\cajadomain\\interfaces\\cajainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\domain\\comerciodomain\\entities\\comercio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\domain\\comerciodomain\\entities\\comercio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|c:\\users\\harly\\documents\\visual studio 2022\\fidelitas\\sc-601_proyecto-ufide_sinpe-empresarial\\sinpe empresarial\\views\\caja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E58700CD-A485-4042-86BD-5C602BD14FD8}|SINPE Empresarial\\SINPE Empresarial.csproj|solutionrelative:sinpe empresarial\\views\\caja\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,34 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CajaInterface.cs",
-              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
-              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Domain\\CajaDomain\\Interfaces\\CajaInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T15:19:58.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Comercio.cs",
-              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "RelativeToolTip": "SINPE Empresarial\\Domain\\ComercioDomain\\Entities\\Comercio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T15:14:46.829Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -62,22 +24,9 @@
               "RelativeDocumentMoniker": "SINPE Empresarial\\Controllers\\CajaController.cs",
               "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Controllers\\CajaController.cs",
               "RelativeToolTip": "SINPE Empresarial\\Controllers\\CajaController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAA3wIAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T15:11:33.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Caja\\Index.cshtml",
-              "RelativeDocumentMoniker": "SINPE Empresarial\\Views\\Caja\\Index.cshtml",
-              "ToolTip": "C:\\Users\\harly\\Documents\\Visual Studio 2022\\Fidelitas\\SC-601_Proyecto-Ufide_SINPE-Empresarial\\SINPE Empresarial\\Views\\Caja\\Index.cshtml",
-              "RelativeToolTip": "SINPE Empresarial\\Views\\Caja\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T15:07:29.248Z",
+              "WhenOpened": "2025-07-02T22:44:03.272Z",
               "EditorCaption": ""
             }
           ]

@@ -270,8 +270,6 @@ C:\Users\pchacon\OneDrive - Auto Mercado S.A\Documentos\GitHub\SC-601_Proyecto-U
 C:\Users\pchacon\OneDrive - Auto Mercado S.A\Documentos\GitHub\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Em.1B47B1D6.Up2Date
 C:\Users\pchacon\OneDrive - Auto Mercado S.A\Documentos\GitHub\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.Initial.resources
 C:\Users\pchacon\OneDrive - Auto Mercado S.A\Documentos\GitHub\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache
-C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.AssemblyReference.cache
-C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.CoreCompileInputs.cache
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\SINPE Empresarial.dll.config
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\SINPE Empresarial.dll
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\SINPE Empresarial.pdb
@@ -332,8 +330,10 @@ C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINP
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\System.Web.Optimization.xml
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Newtonsoft.Json.xml
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\bin\Antlr3.Runtime.pdb
+C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.AssemblyReference.cache
+C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.Initial.resources
+C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache
+C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.CoreCompileInputs.cache
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Em.1B47B1D6.Up2Date
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.dll
 C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.pdb
-C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE_Empresarial.Migrations.Initial.resources
-C:\Users\harly\Documents\Visual Studio 2022\Fidelitas\SC-601_Proyecto-Ufide_SINPE-Empresarial\SINPE Empresarial\obj\Debug\SINPE Empresarial.csproj.GenerateResource.cache

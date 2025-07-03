@@ -4,6 +4,26 @@
     ViewBag.Title = "Bitácora de Eventos";
 }
 
+<!-- Función para formatear el JSON para una mejor visibilidad-->
+@functions {
+    public string FormatJson(string json)
+    {
+        if (string.IsNullOrWhiteSpace(json))
+            return "";
+
+        try
+        {
+            var parsed = Newtonsoft.Json.Linq.JToken.Parse(json);
+            return parsed.ToString(Newtonsoft.Json.Formatting.Indented);
+        }
+        catch
+        {
+            return json;
+        }
+    }
+}
+
+
 <h2>Bitácora de Eventos</h2>
 
 <table class="table">
@@ -32,13 +52,13 @@
                 <td>
                     @if (!string.IsNullOrEmpty(item.DatosAnteriores))
                     {
-                        <pre><code>@Html.Raw(Json.Encode(Newtonsoft.Json.JsonConvert.DeserializeObject(item.DatosAnteriores)))</code></pre>
+                        <pre><code>@FormatJson(item.DatosAnteriores)</code></pre>
                     }
                 </td>
                 <td>
                     @if (!string.IsNullOrEmpty(item.DatosPosteriores))
                     {
-                        <pre><code>@Html.Raw(Json.Encode(Newtonsoft.Json.JsonConvert.DeserializeObject(item.DatosPosteriores)))</code></pre>
+                        <pre><code>@FormatJson(item.DatosPosteriores)</code></pre>
                     }
                 </td>
             </tr>

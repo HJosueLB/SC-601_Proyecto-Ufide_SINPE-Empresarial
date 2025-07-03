@@ -120,7 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\BitacoraController.cs" />
+    <Compile Include="Services\Bitacora\BitacoraController.cs" />
     <Compile Include="Controllers\CajaController.cs" />
     <Compile Include="Controllers\ComercioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -151,7 +151,12 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\SINPE_Empresarial_DB.cs" />
-    <Compile Include="Services\BitacoraService.cs" />
+    <Compile Include="Services\Bitacora\BitacoraService.cs" />
+    <Compile Include="Services\Bitacora\DTOs\CajaDTO.cs" />
+    <Compile Include="Services\Bitacora\DTOs\ComercioDTO.cs" />
+    <Compile Include="Services\Bitacora\IBitacoraManager.cs" />
+    <Compile Include="Services\Bitacora\Mappers\CajaMapper.cs" />
+    <Compile Include="Services\Bitacora\Mappers\ComercioMapper.cs" />
     <Compile Include="Services\CajaService.cs" />
     <Compile Include="Services\CatalogoService.cs" />
     <Compile Include="Services\ComercioService.cs" />
