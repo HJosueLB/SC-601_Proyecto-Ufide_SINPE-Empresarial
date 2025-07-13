@@ -1,3 +1,36 @@
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+
+# Carpetas generadas automáticamente
 bin/
 obj/
-.vs/
+
+# Archivos de configuración local
+*.dbmdl
+*.log
+*.tmp
+*.cache
+
+# Archivos de publicación
+*.publish.xml
+
+# Configuración de IIS Express
+.vsconfig/
+applicationhost.config
+
+# Archivos de dependencias temporales
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Archivos de solución y proyecto temporales
+Backup*/
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+# Archivos de entorno
+.env
+*.local
