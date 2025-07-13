@@ -25,5 +25,14 @@ namespace SINPE_Empresarial.Infrastructure.SinpeInfrastructure.Repositories
             _context.Sinpe.Add(sinpe);
             _context.SaveChanges();
         }
+
+        // Método: Obtiene todos los sinpes registrados por teléfono de caja.
+        public IEnumerable<Sinpe> ObtenerPorTelefonoCaja(string telefonoSINPE)
+        {
+            return _context.Sinpe
+                .Where(s => s.TelefonoDestinatario == telefonoSINPE)
+                .OrderByDescending(s => s.FechaDeRegistro)
+                .ToList();
+        }
     }
 }

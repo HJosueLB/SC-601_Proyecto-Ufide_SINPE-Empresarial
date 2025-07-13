@@ -1,10 +1,7 @@
 ﻿using SINPE_Empresarial.Domain.ComercioDomain.Entities;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace SINPE_Empresarial.Domain.CajaDomain.Entities
 {
@@ -18,9 +15,10 @@ namespace SINPE_Empresarial.Domain.CajaDomain.Entities
         [Required]
         public int IdComercio { get; set; }
 
-        // Navegación hacia la entidad 'Comercio'.
+        // Navegación hacia la entidad 'Comercio' - Llave foránea.
+        // Relación de muchos a uno ( Muchas cajas pertencen a un comercio )
         [ForeignKey("IdComercio")]
-        public Comercio Comercio { get; set; }
+        public virtual Comercio Comercio { get; set; }
 
         // Atributo: Nombre de la caja.
         [Required]
@@ -42,11 +40,11 @@ namespace SINPE_Empresarial.Domain.CajaDomain.Entities
         public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
 
         // Atributo: Fecha de modificación de la caja.
-        public DateTime? FechaDeModificacion { get; set; } = DateTime.Now;
+        public DateTime? FechaDeModificacion { get; set; }
 
         // Atributo: Estado de la caja (1 – Activo, 0 – Inactivo).
         [Required]
-        public bool Estado { get; set; }
+        public bool Estado { get; set; } = true;
     }
-    
+
 }

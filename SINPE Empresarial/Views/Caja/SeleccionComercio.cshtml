@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SINPE_Empresarial.Domain.ComercioDomain.Entities.Comercio>
+
+@using (Html.BeginForm("Index", "Caja", FormMethod.Get))
+{
+
+    <main>
+
+        <!-- Título de la pagina -->
+        <h1 class="mb-4"> Cajas de Comercios </h1>
+
+        <!-- Ciclo para mostrar los comercios registrados -->
+
+        <div class="form-group">
+
+            <h5>Seleccione un comercio:</h5>
+            <select class="form-control" name="idComercio">
+                @foreach (var comercio in Model)
+                {
+                    <option value="@comercio.IdComercio">@comercio.Nombre</option>
+                }
+            </select>
+
+        </div>
+        <br />
+
+        <!-- Botón para mostar las cajas relacionadas al comercio seleccionado -->
+        <button type="submit" class="btn text-white fw-bold" style="background-color: #574FD6;">
+            Ver Cajas
+        </button>
+
+
+    </main>
+}

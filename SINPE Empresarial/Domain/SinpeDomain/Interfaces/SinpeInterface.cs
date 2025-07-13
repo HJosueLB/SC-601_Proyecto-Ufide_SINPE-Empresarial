@@ -14,5 +14,9 @@ namespace SINPE_Empresarial.Domain.SinpeDomain.Interfaces
     {
         // Método: Registra un nuevo sinpe en la base de datos.
         void Registrar(Sinpe sinpe);
+
+        // Método: Obtiene todos los sinpes registrados por teléfono de caja.
+        IEnumerable<Sinpe> ObtenerPorTelefonoCaja(string telefonoSINPE);
+
     }
 }

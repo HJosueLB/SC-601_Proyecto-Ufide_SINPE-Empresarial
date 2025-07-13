@@ -1,0 +1,74 @@
+﻿@model IEnumerable<SINPE_Empresarial.Domain.CajaDomain.Entities.Caja>
+
+@{
+    ViewBag.Title = "Cajas del Comercio";
+}
+
+<main>
+
+    <!-- Título de la página -->
+    <h1 class="mb-4">Cajas: Comercio @ViewBag.NombreComercio</h1>
+
+    <!-- Barra de Opciones -->
+    <div class="fixed-table-toolbar d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+
+        <!-- Botón de registro -->
+        <a href="@Url.Action("Register", "Caja", new { idComercio = ViewBag.IdComercio })"
+           class="btn text-white fw-bold" style="background-color: #574FD6;">
+            Registrar nueva caja
+        </a>
+
+        <a href="@Url.Action("SeleccionComercio", "Caja")" class="btn text-white fw-bold" style="background-color: cadetblue;">
+            Regresar
+        </a>
+
+    </div>
+
+    <!-- Tabla de Cajas -->
+    <div class="table-responsive mb-5">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Acciones</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Teléfono SINPE</th>
+                    <th>Fecha Registro</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var caja in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a href="@Url.Action("Editar", "Caja", new { id = caja.IdCaja })"
+                                   class="btn btn-sm btn-success me-1">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="@Url.Action("Transacciones", "Caja", new { telefonoSINPE = caja.TelefonoSINPE })"
+                                   class="btn btn-sm btn-info">
+                                    <i class="bi bi-list-check"></i> Ver transacciones
+                                </a>
+                            </td>
+                            <td>@caja.Nombre</td>
+                            <td>@caja.Descripcion</td>
+                            <td>@caja.TelefonoSINPE</td>
+                            <td>@caja.FechaDeRegistro.ToString("dd/MM/yyyy")</td>
+                            <td>@(caja.Estado ? "Activo" : "Inactivo")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">No hay cajas registradas para este comercio.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</main>

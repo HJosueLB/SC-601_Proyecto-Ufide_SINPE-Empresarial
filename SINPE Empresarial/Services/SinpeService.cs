@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace SINPE_Empresarial.Services
 {
@@ -23,5 +24,12 @@ namespace SINPE_Empresarial.Services
         {
             _repositorio.Registrar(sinpe);
         }
+
+
+        public IEnumerable<Sinpe> ObtenerPorTelefonoCaja(string telefonoSINPE)
+        {
+            return _repositorio.ObtenerPorTelefonoCaja(telefonoSINPE);
+        }
+
     }
 }

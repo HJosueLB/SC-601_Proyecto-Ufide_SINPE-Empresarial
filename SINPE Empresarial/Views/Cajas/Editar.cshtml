@@ -1,0 +1,73 @@
+@model SINPE_Empresarial.Domain.ComercioDomain.Entities.Caja
+
+@{
+    ViewBag.Title = "Editar Caja";
+}
+
+<!-- Integración de CSS -->
+<link rel="stylesheet" href="~/Content/css/CajaStyles/CajaEdit.css" />
+
+<!-- Formulario de edición de una caja -->
+<div class="container-fluid bg-light min-vh-100 py-5">
+    <div class="container bg-white p-5 shadow-sm rounded-4" style="max-width: 900px;">
+
+        <!-- Encabezado de formulario -->
+        <div class="mb-4">
+            <h2 class="fw-bold">Editar Caja</h2>
+            <p class="text-muted mb-0">Actualiza los datos de la caja.</p>
+        </div>
+
+        <!-- Validación -->
+        @using (Html.BeginForm("EditarCaja", "Cajas", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(m => m.IdCaja)
+
+            <div class="row g-4">
+
+                <!-- Nombre -->
+                <div class="col-md-6">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control form-control-lg", placeholder = "Nombre de la caja" })
+                    @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Descripción -->
+                <div class="col-md-6">
+                    <label for="Descripcion" class="form-label">Descripción</label>
+                    @Html.TextBoxFor(m => m.Descripcion, new { @class = "form-control form-control-lg", placeholder = "Descripción de la caja" })
+                    @Html.ValidationMessageFor(m => m.Descripcion, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Teléfono SINPE -->
+                <div class="col-md-6">
+                    <label for="TelefonoSINPE" class="form-label">Teléfono SINPE</label>
+                    @Html.TextBoxFor(m => m.TelefonoSINPE, new { @class = "form-control form-control-lg", placeholder = "Teléfono SINPE" })
+                    @Html.ValidationMessageFor(m => m.TelefonoSINPE, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Estado -->
+                <div class="col-md-6">
+                    <label for="Estado" class="form-label">Estado</label>
+                    @Html.DropDownListFor(m => m.Estado, new SelectList(new List<SelectListItem>
+                    {
+                        new SelectListItem { Text = "Activo", Value = "true" },
+                        new SelectListItem { Text = "Inactivo", Value = "false" }
+                    }, "Value", "Text"), "Seleccione una opción", new { @class = "form-select form-select-lg" })
+                    @Html.ValidationMessageFor(m => m.Estado, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Botones -->
+                <div class="col-12 d-flex justify-content-between flex-wrap gap-3">
+                    <button type="submit" class="btn text-white fw-bold" style="background-color: #574FD6;">
+                        Actualizar
+                    </button>
+
+                    <a href="@Url.Action("Index", "Cajas")" class="btn text-white fw-bold" style="background-color: cadetblue;">
+                        Regresar
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
