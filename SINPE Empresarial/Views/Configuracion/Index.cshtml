@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SINPE_Empresarial.Services.Configuracion.DTOs.ConfiguracionListadoDto>
+
+@{
+    ViewBag.Title = "Lista de Configuraciones";
+}
+
+<h2>Lista de Configuraciones</h2>
+
+<p>
+    <a href="@Url.Action("Crear", "Configuracion")" class="btn btn-success">Agregar Configuración</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre del Comercio</th>
+            <th>Tipo de Configuración</th>
+            <th>Comisión</th>
+            <th>Fecha de Registro</th>
+            <th>Fecha de Modificación</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreComercio</td>
+                <td>@item.TipoConfiguracion</td>
+                <td>@item.Comision</td>
+                <td>@item.FechaDeRegistro</td>
+                <td>@item.FechaDeModificacion</td>
+                <td>@item.Estado</td>
+                <td>
+                    <a href="@Url.Action("Editar", "Configuracion", new { id = item.IdConfiguracion })" class="btn btn-primary btn-sm">
+                        Editar
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

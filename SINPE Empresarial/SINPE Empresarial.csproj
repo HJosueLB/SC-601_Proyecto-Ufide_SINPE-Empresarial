@@ -120,7 +120,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ConfiguracionController.cs" />
     <Compile Include="Domain\ConfiguracionDomain\Entities\Configuracion.cs" />
+    <Compile Include="Domain\ConfiguracionDomain\Interfaces\ConfiguracionInterface.cs" />
+    <Compile Include="Infrastructure\ConfiguracionInfraestructure\Repositories\ConfiguracionRepository.cs" />
     <Compile Include="Migrations\202507140035342_Lau07132025.cs" />
     <Compile Include="Migrations\202507140035342_Lau07132025.Designer.cs">
       <DependentUpon>202507140035342_Lau07132025.cs</DependentUpon>
@@ -132,6 +135,10 @@
     <Compile Include="Migrations\202507140102532_AgregarConfiguracionesTabla.cs" />
     <Compile Include="Migrations\202507140102532_AgregarConfiguracionesTabla.Designer.cs">
       <DependentUpon>202507140102532_AgregarConfiguracionesTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507140215465_SincronizarModelo.cs" />
+    <Compile Include="Migrations\202507140215465_SincronizarModelo.Designer.cs">
+      <DependentUpon>202507140215465_SincronizarModelo.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\Bitacora\BitacoraController.cs" />
     <Compile Include="Controllers\CajaController.cs" />
@@ -173,6 +180,8 @@
     <Compile Include="Services\CajaService.cs" />
     <Compile Include="Services\CatalogoService.cs" />
     <Compile Include="Services\ComercioService.cs" />
+    <Compile Include="Services\Configuracion\ConfiguracionService.cs" />
+    <Compile Include="Services\Configuracion\DTOs\ConfiguracionListadoDto.cs" />
     <Compile Include="Services\SinpeService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -242,11 +251,11 @@
     <Content Include="Views\Caja\Register.cshtml" />
     <Content Include="Views\Caja\SeleccionComercio.cshtml" />
     <Content Include="Views\Caja\Transacciones.cshtml" />
+    <Content Include="Views\Configuracion\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Domain\ConfiguracionDomain\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -287,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202507140102532_AgregarConfiguracionesTabla.resx">
       <DependentUpon>202507140102532_AgregarConfiguracionesTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507140215465_SincronizarModelo.resx">
+      <DependentUpon>202507140215465_SincronizarModelo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

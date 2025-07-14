@@ -46,7 +46,7 @@ namespace SINPE_Empresarial
             // Mapeo de la entidad BitacoraEvento a la tabla BITACORA_EVENTOS
             modelBuilder.Entity<BitacoraEvento>().ToTable("BITACORA_EVENTOS");
 
-            modelBuilder.Entity<Configuracion>().ToTable("Configuracion");
+            modelBuilder.Entity<Configuracion>().ToTable("Configuraciones");
 
         }
     }

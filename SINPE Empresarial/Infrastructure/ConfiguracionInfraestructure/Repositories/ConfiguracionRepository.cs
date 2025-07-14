@@ -1,0 +1,72 @@
+﻿using SINPE_Empresarial.Domain.ComercioDomain.Entities;
+using SINPE_Empresarial.Domain.ConfiguracionDomain.Entities;
+using SINPE_Empresarial.Domain.ConfiguracionDomain.Interfaces;
+using SINPE_Empresarial.Services.Configuracion.DTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace SINPE_Empresarial.Infrastructure.ConfiguracionInfraestructure.Repositories
+{
+    public class ConfiguracionRepository : ConfiguracionInterface
+    {
+        private readonly SINPE_Empresarial_DB _context;
+
+        public ConfiguracionRepository()
+        {
+            _context = new SINPE_Empresarial_DB();
+        }
+
+        public IEnumerable<Configuracion> ObtenerTodos()
+        {
+            return _context.Configuraciones.ToList();
+
+        }
+
+        public void Agregar(Configuracion configuracion)
+        {
+            _context.Configuraciones.Add(configuracion);
+            _context.SaveChanges();
+        }
+
+        public void Actualizar(Configuracion configuracion)
+        {
+            _context.Entry(configuracion).State = System.Data.Entity.EntityState.Modified;
+            _context.SaveChanges();
+        }
+
+        public IEnumerable<ConfiguracionListadoDto> ListarConfiguraciones()
+        {
+            var lista = _context.Configuraciones
+        .Select(c => new
+        {
+            c.IdConfiguracion,
+            NombreComercio = c.Comercio.Nombre,
+            c.TipoConfiguracion,
+            c.Comision,
+            c.FechaDeRegistro,
+            c.FechaDeModificacion,
+            c.Estado
+        })
+        .ToList()  // Aquí termina la ejecución en la base de datos
+        .Select(c => new ConfiguracionListadoDto
+        {
+            IdConfiguracion = c.IdConfiguracion,
+            NombreComercio = c.NombreComercio,
+            TipoConfiguracion = c.TipoConfiguracion == 1 ? "Plataforma" :
+                                c.TipoConfiguracion == 2 ? "Externa" :
+                                "Ambas",
+            Comision = c.Comision,
+            FechaDeRegistro = c.FechaDeRegistro.ToString("yyyy-MM-dd HH:mm:ss"),
+            FechaDeModificacion = c.FechaDeModificacion.HasValue
+                                  ? c.FechaDeModificacion.Value.ToString("yyyy-MM-dd HH:mm:ss")
+                                  : "Sin modificar",
+            Estado = c.Estado ? "Activo" : "Inactivo"
+        });
+
+            return lista;
+        }
+
+    }
+}
