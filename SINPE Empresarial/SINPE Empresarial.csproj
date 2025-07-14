@@ -120,6 +120,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Domain\ConfiguracionDomain\Entities\Configuracion.cs" />
+    <Compile Include="Migrations\202507140035342_Lau07132025.cs" />
+    <Compile Include="Migrations\202507140035342_Lau07132025.Designer.cs">
+      <DependentUpon>202507140035342_Lau07132025.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507140056410_AgregarConfiguraciones.cs" />
+    <Compile Include="Migrations\202507140056410_AgregarConfiguraciones.Designer.cs">
+      <DependentUpon>202507140056410_AgregarConfiguraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507140102532_AgregarConfiguracionesTabla.cs" />
+    <Compile Include="Migrations\202507140102532_AgregarConfiguracionesTabla.Designer.cs">
+      <DependentUpon>202507140102532_AgregarConfiguracionesTabla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Services\Bitacora\BitacoraController.cs" />
     <Compile Include="Controllers\CajaController.cs" />
     <Compile Include="Controllers\ComercioController.cs" />
@@ -233,6 +246,7 @@
   <ItemGroup>
     <Folder Include="Application\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Domain\ConfiguracionDomain\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -264,6 +278,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202507021457074_Initial.resx">
       <DependentUpon>202507021457074_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507140035342_Lau07132025.resx">
+      <DependentUpon>202507140035342_Lau07132025.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507140056410_AgregarConfiguraciones.resx">
+      <DependentUpon>202507140056410_AgregarConfiguraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507140102532_AgregarConfiguracionesTabla.resx">
+      <DependentUpon>202507140102532_AgregarConfiguracionesTabla.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
