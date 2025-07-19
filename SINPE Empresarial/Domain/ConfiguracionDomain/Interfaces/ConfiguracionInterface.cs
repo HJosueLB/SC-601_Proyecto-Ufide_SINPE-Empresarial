@@ -14,5 +14,7 @@ namespace SINPE_Empresarial.Domain.ConfiguracionDomain.Interfaces
         void Actualizar(Configuracion c);
         void Agregar(Configuracion c);
         IEnumerable<ConfiguracionListadoDto> ListarConfiguraciones();
+        Configuracion ObtenerPorId(int id);
+        bool ExisteConfiguracionPorComercio(int idComercio);
     }
 }

@@ -30,5 +30,15 @@ namespace SINPE_Empresarial.Services.Configuracion
         {
             _repositorio.Agregar(c);
         }
+
+        public SINPE_Empresarial.Domain.ConfiguracionDomain.Entities.Configuracion ObtenerPorId(int id)
+        {
+            return _repositorio.ObtenerPorId(id);
+        }
+
+        public bool ExisteConfiguracionPorComercio(int idComercio)
+        {
+            return _repositorio.ExisteConfiguracionPorComercio(idComercio);
+        }
     }
 }

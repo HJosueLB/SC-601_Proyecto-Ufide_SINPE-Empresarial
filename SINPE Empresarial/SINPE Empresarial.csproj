@@ -252,6 +252,8 @@
     <Content Include="Views\Caja\SeleccionComercio.cshtml" />
     <Content Include="Views\Caja\Transacciones.cshtml" />
     <Content Include="Views\Configuracion\Index.cshtml" />
+    <Content Include="Views\Configuracion\Editar.cshtml" />
+    <Content Include="Views\Configuracion\Agregar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\" />

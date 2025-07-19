@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace SINPE_Empresarial.Infrastructure.ConfiguracionInfraestructure.Repositories
 {
@@ -66,6 +67,18 @@ namespace SINPE_Empresarial.Infrastructure.ConfiguracionInfraestructure.Reposito
         });
 
             return lista;
+        }
+
+        public Configuracion ObtenerPorId(int id)
+        {
+            return _context.Configuraciones
+                           .Include(c => c.Comercio)  
+                           .FirstOrDefault(c => c.IdConfiguracion == id);
+        }
+
+        public bool ExisteConfiguracionPorComercio(int idComercio)
+        {
+            return _context.Configuraciones.Any(c => c.IdComercio == idComercio);
         }
 
     }
