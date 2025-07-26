@@ -2,6 +2,7 @@ using SINPE_Empresarial.Domain.BitacoraDomain.Entities; // Asegúrate de que esta
 using SINPE_Empresarial.Domain.CajaDomain.Entities;
 using SINPE_Empresarial.Domain.ComercioDomain.Entities;
 using SINPE_Empresarial.Domain.ConfiguracionDomain.Entities;
+using SINPE_Empresarial.Domain.ReporteDomain.Entities;
 using SINPE_Empresarial.Domain.SinpeDomain.Entities;
 using System.Data.Entity;
 
@@ -32,7 +33,11 @@ namespace SINPE_Empresarial
         // DbSet: Mapear la tabla de la entidad BitacoraEvento
         public DbSet<BitacoraEvento> BitacoraEventos { get; set; }
 
+        // DbSet: Mapear la tabla de la entidad Configuracion
         public DbSet<Configuracion> Configuraciones { get; set; }
+
+        // DbSet: Mapear la tabla de la entidad ReporteMensual
+        public DbSet<ReporteMensual> ReportesMensuales { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -47,7 +52,7 @@ namespace SINPE_Empresarial
             modelBuilder.Entity<BitacoraEvento>().ToTable("BITACORA_EVENTOS");
 
             modelBuilder.Entity<Configuracion>().ToTable("Configuraciones");
-
+            modelBuilder.Entity<ReporteMensual>().ToTable("ReportesMensuales");
         }
     }
 }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SINPE_Empresarial.Domain.CajaDomain.Entities;
+using SINPE_Empresarial.Domain.ConfiguracionDomain.Entities;
+using SINPE_Empresarial.Domain.ReporteDomain.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -60,6 +63,11 @@ namespace SINPE_Empresarial.Domain.ComercioDomain.Entities
 
         // Atributo: Estado actual del negocio (Activo / Inactivo).
         public bool Estado { get; set; } = true;
+
+        // Navegación hacia las entidades para el módulo de reporteria.
+        public virtual ICollection<Caja> Cajas { get; set; }
+        public virtual ICollection<Configuracion> Configuraciones { get; set; }
+        public virtual ICollection<ReporteMensual> ReportesMensuales { get; set; }
 
     }
 }

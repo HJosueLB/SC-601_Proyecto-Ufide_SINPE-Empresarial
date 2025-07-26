@@ -20,6 +20,6 @@ INSERT INTO Comercio (
 )
 VALUES 
 ('123456789', 1, 'Soda El Buen Sabor', 1, '22223333', 'soda@sabor.com', 'Calle 5, San José', GETDATE(), GETDATE(), 1),
-('3101234567', 2, 'Ferretería Birri', 2, '24335566', 'contacto@tornillofeliz.com', 'Diagonal a la plaza', GETDATE(), GETDATE(), 1),
-('3109988776', 2, 'Super Cali', 3, '88887777', 'ventas@supertico.cr', 'Frente a la gasolinera', GETDATE(), GETDATE(), 0);
+('3101234567', 2, 'Ferretería Birri', 2, '24335566', 'contacto@ferreteriaBirri.com', 'Diagonal a la plaza', GETDATE(), GETDATE(), 1),
+('3109988776', 2, 'Super Cali', 3, '88887777', 'ventas@superCali.cr', 'Frente a la gasolinera', GETDATE(), GETDATE(), 0);
 
