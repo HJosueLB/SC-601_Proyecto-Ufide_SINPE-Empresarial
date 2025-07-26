@@ -2,32 +2,82 @@
     ViewBag.Title = "Principal";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+<link rel="stylesheet" href="~/Content/css/MainStyles/main.css" />
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+<div class="container my-5">
+
+    <!-- Principal -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">
+            Bienvenido a <span style="color: #2C3E50;">SINPE Empresarial</span>
+        </h1>
+        <p class="lead text-muted">
+            Administra Comercios, Cajas, Transacciones SINPE, Reportes y más en un solo lugar.
+        </p>
     </div>
-</main>
+
+    <!-- Accesos rápidos -->
+    <div class="row g-4 justify-content-center">
+
+        <!-- Comercios -->
+        <div class="col-md-4">
+            <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                <i class="bi bi-shop display-4 mb-3 text-primary"></i>
+                <h4 class="fw-semibold">Comercios</h4>
+                <p class="text-muted small">Gestiona todos los comercios registrados en la plataforma.</p>
+                <a href="@Url.Action("Index", "Comercio")" class="btn btn-primary btn-sm mt-2">Ir a Comercios</a>
+            </div>
+        </div>
+
+        <!-- Cajas -->
+        <div class="col-md-4">
+            <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                <i class="bi bi-credit-card-2-front display-4 mb-3 text-success"></i>
+                <h4 class="fw-semibold">Cajas</h4>
+                <p class="text-muted small">Consulta y administra las cajas asociadas a cada comercio.</p>
+                <a href="@Url.Action("SeleccionComercio", "Caja")" class="btn btn-success btn-sm mt-2">Ver Cajas</a>
+            </div>
+        </div>
+
+        <!-- SINPE -->
+        <div class="col-md-4">
+            <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                <i class="bi bi-cash-stack display-4 mb-3 text-warning"></i>
+                <h4 class="fw-semibold">SINPE</h4>
+                <p class="text-muted small">Registra y consulta las transacciones SINPE del sistema.</p>
+                <a href="@Url.Action("Register", "Sinpe")" class="btn btn-warning text-white btn-sm mt-2">Transacciones</a>
+            </div>
+        </div>
+
+        <!-- Reportes -->
+        <div class="col-md-4">
+            <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                <i class="bi bi-bar-chart display-4 mb-3 text-info"></i>
+                <h4 class="fw-semibold">Reportes</h4>
+                <p class="text-muted small">Genera reportes mensuales y consulta estadísticas.</p>
+                <a href="@Url.Action("Index", "Reporte")" class="btn btn-info text-white btn-sm mt-2">Ver Reportes</a>
+            </div>
+        </div>
+
+        <!-- Configuración -->
+        <div class="col-md-4">
+            <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                <i class="bi bi-gear-fill display-4 mb-3 text-secondary"></i>
+                <h4 class="fw-semibold">Configuración</h4>
+                <p class="text-muted small">Ajusta comisiones y configuraciones por comercio.</p>
+                <a href="@Url.Action("Index", "Configuracion")" class="btn btn-secondary btn-sm mt-2">Configurar</a>
+            </div>
+        </div>
+
+        <!-- Bitácora -->
+        <div class="col-md-4">
+            <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                <i class="bi bi-journal-text display-4 mb-3 text-dark"></i>
+                <h4 class="fw-semibold">Bitácora</h4>
+                <p class="text-muted small">Consulta los registros de auditoría del sistema.</p>
+                <a href="@Url.Action("Index", "Bitacora")" class="btn btn-dark btn-sm mt-2">Ver Bitácora</a>
+            </div>
+        </div>
+
+    </div>
+</div>

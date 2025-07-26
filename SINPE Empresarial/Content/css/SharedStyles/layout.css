@@ -1,0 +1,75 @@
+﻿.main-navbar {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.8rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+
+.main-logo {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    color: #000 !important;
+    transition: opacity 0.3s ease;
+}
+
+.main-logo:hover {
+    opacity: 0.7;
+}
+
+.main-link {
+    font-size: 0.95rem;
+    color: rgba(0,0,0,0.75) !important;
+    padding: 0.6rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.main-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #000 !important;
+}
+
+.main-link:active {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.main-navbar {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.foot-footer {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    color: rgba(0,0,0,0.75);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+    transition: color 0.3s ease;
+    margin: 0 6px;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.foot-social {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1.3rem;
+    color: rgba(0,0,0,0.55);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.foot-social:hover {
+    color: #000;
+    transform: scale(1.1);
+}
