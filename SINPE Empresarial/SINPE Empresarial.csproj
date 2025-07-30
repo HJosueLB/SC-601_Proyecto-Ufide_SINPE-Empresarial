@@ -122,10 +122,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ConfiguracionController.cs" />
     <Compile Include="Controllers\ReporteController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Domain\ConfiguracionDomain\Entities\Configuracion.cs" />
     <Compile Include="Domain\ConfiguracionDomain\Interfaces\ConfiguracionInterface.cs" />
     <Compile Include="Domain\ReporteDomain\Entities\ReporteMensual.cs" />
+    <Compile Include="Domain\UsuarioDomain\Entities\Usuario.cs" />
+    <Compile Include="Domain\UsuarioDomain\Interfaces\UsuarioInterface.cs" />
     <Compile Include="Infrastructure\ConfiguracionInfraestructure\Repositories\ConfiguracionRepository.cs" />
+    <Compile Include="Infrastructure\UsuarioInfraestructure\Repositories\UsuarioRepository.cs" />
     <Compile Include="Migrations\202507140035342_Lau07132025.cs" />
     <Compile Include="Migrations\202507140035342_Lau07132025.Designer.cs">
       <DependentUpon>202507140035342_Lau07132025.cs</DependentUpon>
@@ -145,6 +149,10 @@
     <Compile Include="Migrations\202507261545138_AddReporteMensual.cs" />
     <Compile Include="Migrations\202507261545138_AddReporteMensual.Designer.cs">
       <DependentUpon>202507261545138_AddReporteMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507300156501_AgregarUsuarios.cs" />
+    <Compile Include="Migrations\202507300156501_AgregarUsuarios.Designer.cs">
+      <DependentUpon>202507300156501_AgregarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\Bitacora\BitacoraController.cs" />
     <Compile Include="Controllers\CajaController.cs" />
@@ -185,6 +193,7 @@
     <Compile Include="Services\Bitacora\Mappers\ComercioMapper.cs" />
     <Compile Include="Services\CajaService.cs" />
     <Compile Include="Services\CatalogoService.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
     <Compile Include="Services\ComercioService.cs" />
     <Compile Include="Services\Configuracion\ConfiguracionService.cs" />
     <Compile Include="Services\Configuracion\DTOs\ConfiguracionListadoDto.cs" />
@@ -264,6 +273,9 @@
     <Content Include="Views\Configuracion\Editar.cshtml" />
     <Content Include="Views\Configuracion\Agregar.cshtml" />
     <Content Include="Views\Reporte\Index.cshtml" />
+    <Content Include="Views\Usuario\index.cshtml" />
+    <Content Include="Views\Usuario\crear.cshtml" />
+    <Content Include="Views\Usuario\editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\" />
@@ -314,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202507261545138_AddReporteMensual.resx">
       <DependentUpon>202507261545138_AddReporteMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507300156501_AgregarUsuarios.resx">
+      <DependentUpon>202507300156501_AgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

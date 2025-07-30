@@ -4,6 +4,7 @@ using SINPE_Empresarial.Domain.ComercioDomain.Entities;
 using SINPE_Empresarial.Domain.ConfiguracionDomain.Entities;
 using SINPE_Empresarial.Domain.ReporteDomain.Entities;
 using SINPE_Empresarial.Domain.SinpeDomain.Entities;
+using SINPE_Empresarial.Domain.UsuarioDomain.Entities;
 using System.Data.Entity;
 
 namespace SINPE_Empresarial
@@ -39,6 +40,8 @@ namespace SINPE_Empresarial
         // DbSet: Mapear la tabla de la entidad ReporteMensual
         public DbSet<ReporteMensual> ReportesMensuales { get; set; }
 
+        public DbSet<Usuario> Usuarios { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -53,6 +56,7 @@ namespace SINPE_Empresarial
 
             modelBuilder.Entity<Configuracion>().ToTable("Configuraciones");
             modelBuilder.Entity<ReporteMensual>().ToTable("ReportesMensuales");
+            modelBuilder.Entity<Usuario>().ToTable("Usuario");
         }
     }
 }
