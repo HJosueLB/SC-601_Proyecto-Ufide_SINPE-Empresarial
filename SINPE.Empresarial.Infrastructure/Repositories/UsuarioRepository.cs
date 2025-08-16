@@ -66,5 +66,39 @@ namespace SINPE.Empresarial.Infrastructure.Repositories
                 _context.SaveChanges();
             }
         }
+
+        // Método: Buscar por correo (perfil de negocio)
+        public Usuario ObtenerPorCorreo(string email)
+        {
+            return _context.Usuarios
+                .Include(u => u.Comercio)
+                .FirstOrDefault(u => u.CorreoElectronico == email);
+        }
+
+        // Método: Buscar por IdNetUser (string de Identity -> Guid)
+        public Usuario ObtenerPorIdNetUser(string idNetUserString)
+        {
+            if (!Guid.TryParse(idNetUserString, out var idNetUserGuid))
+                return null;
+
+            return _context.Usuarios
+                .Include(u => u.Comercio)
+                .FirstOrDefault(u => u.IdNetUser == idNetUserGuid);
+        }
+
+        // Método: Guardar/enlazar el AspNetUser.Id (string) en tu tabla Usuarios (Guid?)
+        public void EnlazarIdentity(int idUsuario, string idNetUserString)
+        {
+            if (!Guid.TryParse(idNetUserString, out var idNetUserGuid))
+                return;
+
+            var u = _context.Usuarios.FirstOrDefault(x => x.IdUsuario == idUsuario);
+            if (u != null)
+            {
+                u.IdNetUser = idNetUserGuid;
+                _context.SaveChanges();
+            }
+        }
+
     }
 }

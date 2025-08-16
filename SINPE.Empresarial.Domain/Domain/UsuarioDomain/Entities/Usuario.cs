@@ -57,5 +57,7 @@ namespace SINPE.Empresarial.Domain.UsuarioDomain.Entities
         // Atributo: Estado del usuario (1 – Activo, 0 – Inactivo).
         [Required]
         public bool Estado { get; set; }
+
+
     }
 }

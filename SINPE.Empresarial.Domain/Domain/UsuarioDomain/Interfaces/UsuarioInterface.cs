@@ -15,5 +15,12 @@ namespace SINPE.Empresarial.Domain.UsuarioDomain.Interfaces
         Usuario ObtenerPorId(int id);
 
         void Editar(Usuario usuario);
+
+        void EnlazarIdentity(int idUsuario, string idNetUserString);
+
+        Usuario ObtenerPorIdNetUser(string idNetUserString);
+
+        Usuario ObtenerPorCorreo(string email);
+
     }
 }

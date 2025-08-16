@@ -1,18 +1,16 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Título de la pagina -->
     <title>@ViewBag.Title - SINPE Empresarial</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" href="~/Content/css/SharedStyles/layout.css" />
 </head>
-
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light main-navbar">
@@ -20,43 +18,55 @@
 
             @Html.ActionLink("SINPE Empresarial", "Index", "Home", new { area = "" }, new { @class = "navbar-brand fw-semibold main-logo" })
 
-            <!-- Botón colapsable -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menú -->
             <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <!-- IZQUIERDA: navegación de la app -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        @Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link main-link" })
+                    </li>
+
+                    @if (Request.IsAuthenticated && User.IsInRole("Administrador"))
+                    {
+                        <li class="nav-item">@Html.ActionLink("Sinpe", "Register", "Sinpe", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Comercio", "Index", "Comercio", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Bitácora", "Index", "Bitacora", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Reportes", "Index", "Reporte", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Configuración", "Index", "Configuracion", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                        <li class="nav-item">@Html.ActionLink("Usuarios", "Index", "Usuario", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                    }
+
+                    @if (Request.IsAuthenticated && User.IsInRole("Cajero"))
+                    {
+                        <li class="nav-item">@Html.ActionLink("Caja", "SeleccionComercio", "Caja", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                    }
+                </ul>
+
+                <!-- DERECHA: login / logout -->
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Sinpe", "Register", "Sinpe", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Comercio", "Index", "Comercio", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Caja", "SeleccionComercio", "Caja", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Bitácora", "Index", "Bitacora", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Reportes", "Index", "Reporte", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Configuración", "Index", "Configuracion", new { area = "" }, new { @class = "nav-link main-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Usuarios", "Index", "Usuario", new { area = "" }, new { @class = "nav-link main-link" })</li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <div class="container body-content">
         @RenderBody()
 
-        <!-- Nuevo Footer -->
         <footer class="foot-footer text-center py-4">
             <p class="mb-1 fw-semibold">SINPE Empresarial © @DateTime.Now.Year</p>
             <p class="small text-muted mb-2">Desarrollado por <strong>Grupo C</strong> - Universidad Fidélitas</p>
 
-            <!-- Enlaces opcionales -->
             <div class="footer-links mb-2">
                 <a href="@Url.Action("About", "Home")">Sobre nosotros</a> ·
                 <a href="@Url.Action("Contact", "Home")">Contacto</a> ·
             </div>
 
-            <!-- Redes sociales -->
             <div>
                 <a href="#" class="foot-social"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="foot-social"><i class="bi bi-linkedin"></i></a>
