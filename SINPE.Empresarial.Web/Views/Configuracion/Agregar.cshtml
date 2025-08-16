@@ -1,0 +1,86 @@
+﻿@model SINPE.Empresarial.Domain.ConfiguracionDomain.Entities.Configuracion
+
+@{
+    ViewBag.Title = "Registrar Configuración";
+}
+
+<!-- CSS adicional (si tienes uno para este módulo) -->
+<link rel="stylesheet" href="~/Content/css/ConfiguracionStyles/ConfiguracionRegister.css" />
+
+<!-- Contenedor principal -->
+<div class="container-fluid bg-light min-vh-100 py-5">
+    <div class="container bg-white p-5 shadow-sm rounded-4" style="max-width: 800px;">
+
+        <!-- Encabezado del formulario -->
+        <div class="mb-4">
+            <h2 class="fw-bold">Registrar Configuración</h2>
+            <p class="text-muted mb-0">Completa los datos para agregar una nueva configuración al sistema.</p>
+        </div>
+
+        <!-- Formulario -->
+        @using (Html.BeginForm("Agregar", "Configuracion", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row g-4">
+
+                <!-- Comercio -->
+                <div class="col-md-12">
+                    <label for="IdComercio" class="form-label fw-bold">Comercio</label>
+                    @Html.DropDownListFor(
+                        model => model.IdComercio,
+                        (SelectList)ViewBag.ListaComercios,
+                        "Seleccione un comercio",
+                        new { @class = "form-select form-select-lg" }
+                    )
+                    @Html.ValidationMessageFor(model => model.IdComercio, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Tipo de configuración -->
+                <div class="col-md-6">
+                    <label for="TipoConfiguracion" class="form-label fw-bold">Tipo de Configuración</label>
+                    @Html.DropDownListFor(
+                        model => model.TipoConfiguracion,
+                        new SelectList(
+                            new[] {
+                                new { Value = "1", Text = "Plataforma" },
+                                new { Value = "2", Text = "Externa" },
+                                new { Value = "3", Text = "Ambas" }
+                            },
+                            "Value", "Text"
+                        ),
+                        "Seleccione una opción",
+                        new { @class = "form-select form-select-lg" }
+                    )
+                    @Html.ValidationMessageFor(model => model.TipoConfiguracion, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Comisión -->
+                <div class="col-md-6">
+                    <label for="Comision" class="form-label fw-bold">Comisión (%)</label>
+                    @Html.TextBoxFor(
+                        model => model.Comision,
+                        new { @class = "form-control form-control-lg", type = "number", min = "0", placeholder = "Ej: 5" }
+                    )
+                    @Html.ValidationMessageFor(model => model.Comision, "", new { @class = "text-danger small" })
+                </div>
+
+                <!-- Resumen de validación -->
+                <div class="col-12">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger mb-3 fw-bold" })
+                </div>
+
+                <!-- Botones -->
+                <div class="col-12 d-flex justify-content-between flex-wrap gap-3">
+                    <button type="submit" class="btn text-white fw-bold" style="background-color: #574FD6;">
+                        Guardar Configuración
+                    </button>
+
+                    <a href="@Url.Action("Index", "Configuracion")" class="btn text-white fw-bold" style="background-color: cadetblue;">
+                        Regresar
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
