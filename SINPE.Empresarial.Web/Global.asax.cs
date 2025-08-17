@@ -1,4 +1,5 @@
 ﻿using SINPE.Empresarial.Web.App_Start;
+using SINPE.Empresarial.Web.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,7 @@ namespace SINPE.Empresarial.Web
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             System.Web.Http.GlobalConfiguration.Configure(WebApiConfig.Register);
         }
+
+ 
     }
 }

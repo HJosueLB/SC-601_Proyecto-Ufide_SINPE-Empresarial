@@ -21,7 +21,12 @@ namespace SINPE.Empresarial.Web.Controllers
         [HttpGet]
         public ActionResult Register()
         {
-            return View();
+            var sinpe = new Sinpe
+            {
+                FechaDeRegistro = DateTime.Now,
+                Estado = true
+            };
+            return View(sinpe);
         }
 
         [HttpPost]

@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using SINPE.Empresarial.Web.Filters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace SINPE.Empresarial.Web
@@ -7,7 +8,7 @@ namespace SINPE.Empresarial.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new GlobalExceptionFilter());
         }
     }
 }
