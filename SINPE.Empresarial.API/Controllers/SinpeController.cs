@@ -2,12 +2,12 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Data.Entity;                           
-using Microsoft.AspNetCore.Mvc;                 
+using Microsoft.AspNetCore.Mvc;
 using SINPE.Empresarial.Infrastructure.Data;
+using SINPE.Empresarial.Domain.SinpeDomain.Entities;
 
 namespace SINPE.Empresarial.API.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
     public class SinpeController : ControllerBase
     {
@@ -18,14 +18,16 @@ namespace SINPE.Empresarial.API.Controllers
             _db = db;
         }
 
-        // GET: /api/sinpe/consultar/{telefonoCaja}
+        private IActionResult Res(bool ok, string msg) =>
+            Ok(new Dictionary<string, object> { ["EsValido"] = ok, ["Mensaje"] = msg });
+
+
         [HttpGet("consultar/{telefonoCaja}")]
         public async Task<IActionResult> Consultar(string telefonoCaja)
         {
             if (string.IsNullOrWhiteSpace(telefonoCaja))
                 return BadRequest(new { mensaje = "Debe enviar el número telefónico de la caja." });
 
-            // 1) Buscar la caja (por TelefonoSINPE)
             var caja = await _db.Cajas
                 .AsNoTracking()
                 .FirstOrDefaultAsync(c => c.TelefonoSINPE == telefonoCaja);
@@ -33,8 +35,7 @@ namespace SINPE.Empresarial.API.Controllers
             if (caja == null)
                 return NotFound(new { mensaje = "Caja no encontrada." });
 
-            // 2) Validar configuración del comercio en la tabla Configuraciones
-            //    Regla: TipoConfiguracion == 2 (Externa) o 3 (Ambas)
+            // Validar configuración del comercio (2=Externa, 3=Ambas)
             var config = await _db.Configuraciones
                 .AsNoTracking()
                 .FirstOrDefaultAsync(cfg => cfg.IdComercio == caja.IdComercio);
@@ -45,7 +46,6 @@ namespace SINPE.Empresarial.API.Controllers
             if (config.TipoConfiguracion != 2 && config.TipoConfiguracion != 3)
                 return StatusCode(403, new { mensaje = "El comercio no está autorizado para sincronización externa." });
 
-            // 3) Traer SINPE asociados a la caja (por teléfono destinatario)
             var sinpes = await _db.Sinpe
                 .AsNoTracking()
                 .Where(s => s.TelefonoDestinatario == telefonoCaja)
@@ -67,14 +67,9 @@ namespace SINPE.Empresarial.API.Controllers
             return Ok(sinpes);
         }
 
-        // POST: /api/sinpe/sincronizar/{idSinpe}
-        // Actualiza el estado del SINPE a sincronizado (Estado = 1) y devuelve { EsValido, Mensaje }
         [HttpPost("sincronizar/{idSinpe:int}")]
         public async Task<IActionResult> Sincronizar(int idSinpe)
         {
-            IActionResult Res(bool ok, string msg) =>
-                Ok(new Dictionary<string, object> { ["EsValido"] = ok, ["Mensaje"] = msg });
-
             if (idSinpe <= 0)
                 return Res(false, "IdSinpe inválido.");
 
@@ -92,10 +87,62 @@ namespace SINPE.Empresarial.API.Controllers
 
                 return Res(true, "SINPE sincronizado correctamente.");
             }
-            catch (Exception)
+            catch
             {
-                
                 return Res(false, "Ocurrió un error al sincronizar. Intente nuevamente.");
+            }
+        }
+
+        [HttpPost("recibir")]
+        public async Task<IActionResult> Recibir([FromBody] Sinpe body)
+        {
+            if (body == null)
+                return Res(false, "Debe enviar el cuerpo de la solicitud.");
+
+            if (!ModelState.IsValid)
+            {
+                var errores = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => string.IsNullOrWhiteSpace(e.ErrorMessage) ? "Dato inválido." : e.ErrorMessage);
+
+                return Res(false, string.Join(" | ", errores));
+            }
+
+            if (body.Monto <= 0)
+                return Res(false, "El monto debe ser mayor que cero.");
+
+            try
+            {
+                var caja = await _db.Cajas
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(c => c.TelefonoSINPE == body.TelefonoDestinatario);
+
+                if (caja == null)
+                    return Res(false, "Caja no encontrada para el teléfono destinatario.");
+
+                if (!caja.Estado)
+                    return Res(false, "La caja se encuentra inactiva.");
+
+                var nuevo = new Sinpe
+                {
+                    TelefonoOrigen = body.TelefonoOrigen,               
+                    NombreOrigen = body.NombreOrigen,                   
+                    TelefonoDestinatario = body.TelefonoDestinatario,   
+                    NombreDestinatario = body.NombreDestinatario,       
+                    Monto = body.Monto,                                 
+                    Descripcion = body.Descripcion,                     
+                    FechaDeRegistro = DateTime.Now,                     
+                    Estado = false                                      
+                };
+
+                _db.Sinpe.Add(nuevo);
+                await _db.SaveChangesAsync();
+
+                return Res(true, "SINPE registrado correctamente.");
+            }
+            catch
+            {
+                return Res(false, "Ocurrió un error al registrar el SINPE. Intente nuevamente.");
             }
         }
     }
