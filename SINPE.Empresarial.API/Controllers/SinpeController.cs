@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Data.Entity;                          
-using Microsoft.AspNetCore.Mvc;
-using SINPE.Empresarial.Infrastructure.Data;       
+using System.Data.Entity;                           
+using Microsoft.AspNetCore.Mvc;                 
+using SINPE.Empresarial.Infrastructure.Data;
 
 namespace SINPE.Empresarial.API.Controllers
 {
@@ -48,7 +48,7 @@ namespace SINPE.Empresarial.API.Controllers
             // 3) Traer SINPE asociados a la caja (por teléfono destinatario)
             var sinpes = await _db.Sinpe
                 .AsNoTracking()
-                .Where(s => s.TelefonoDestinatario == telefonoCaja)  // usa CajaId == caja.Id si así es tu modelo
+                .Where(s => s.TelefonoDestinatario == telefonoCaja)
                 .OrderByDescending(s => s.FechaDeRegistro)
                 .Select(s => new
                 {
@@ -65,6 +65,38 @@ namespace SINPE.Empresarial.API.Controllers
                 .ToListAsync();
 
             return Ok(sinpes);
+        }
+
+        // POST: /api/sinpe/sincronizar/{idSinpe}
+        // Actualiza el estado del SINPE a sincronizado (Estado = 1) y devuelve { EsValido, Mensaje }
+        [HttpPost("sincronizar/{idSinpe:int}")]
+        public async Task<IActionResult> Sincronizar(int idSinpe)
+        {
+            IActionResult Res(bool ok, string msg) =>
+                Ok(new Dictionary<string, object> { ["EsValido"] = ok, ["Mensaje"] = msg });
+
+            if (idSinpe <= 0)
+                return Res(false, "IdSinpe inválido.");
+
+            try
+            {
+                var pago = await _db.Sinpe.FindAsync(idSinpe);
+                if (pago == null)
+                    return Res(false, "No existe un SINPE con ese Id.");
+
+                if (pago.Estado) // ya sincronizado
+                    return Res(false, "El SINPE ya está sincronizado. No se aplicaron cambios.");
+
+                pago.Estado = true; // 1 = sincronizado
+                await _db.SaveChangesAsync();
+
+                return Res(true, "SINPE sincronizado correctamente.");
+            }
+            catch (Exception)
+            {
+                
+                return Res(false, "Ocurrió un error al sincronizar. Intente nuevamente.");
+            }
         }
     }
 }
