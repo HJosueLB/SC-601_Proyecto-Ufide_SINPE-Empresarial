@@ -13,6 +13,10 @@ namespace SINPE.Empresarial.Infrastructure.Data
 {
     public class SINPE_Empresarial_DB : DbContext
     {
+        public SINPE_Empresarial_DB(string connectionString)
+            :base(connectionString)
+        {
+        }
         public SINPE_Empresarial_DB()
             : base("name=SINPE_Empresarial_DB")
         {
