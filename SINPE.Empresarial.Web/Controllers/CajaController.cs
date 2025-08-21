@@ -13,6 +13,7 @@ using System.Web.Mvc;
 
 namespace SINPE.Empresarial.Web.Controllers
 {
+    [Authorize(Roles = "Administrador,Cajero")]
     public class CajaController : Controller
     {
         // Instancia: Servicio de caja
