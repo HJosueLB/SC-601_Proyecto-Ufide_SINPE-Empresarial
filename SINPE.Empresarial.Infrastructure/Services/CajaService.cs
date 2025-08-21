@@ -4,6 +4,7 @@ using SINPE.Empresarial.Domain.CajaDomain.Intefaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Runtime.Remoting.Contexts;
 
 namespace SINPE.Empresarial.Infrastructure.Services
 {

@@ -12,6 +12,7 @@ using System.Web.Mvc;
 
 namespace SINPE.Empresarial.Web.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class ComercioController : Controller
     {
 

@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace SINPE.Empresarial.Web.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class BitacoraController : Controller
     {
         private readonly BitacoraService _bitacoraService;

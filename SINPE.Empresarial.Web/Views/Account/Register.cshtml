@@ -1,48 +1,78 @@
 ﻿@model SINPE.Empresarial.Web.Auth.RegisterViewModel
 @{
-    ViewBag.Title = "Registro";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
+    ViewBag.Title = "Crear cuenta";
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="~/Content/css/RegisterSyles/register.css" />
+</head>
+<body>
+    <div class="page">
+        <div class="card" role="form" aria-labelledby="t">
+            <div class="brand">
+                <h1 id="t">Crear cuenta</h1>
+                <p class="sub">Completa tus datos para continuar</p>
+            </div>
 
-<h2 class="mb-3">Crear cuenta</h2>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { autocomplete = "on" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger", role = "alert" })
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "needs-validation" }))
-{
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="group">
+                    @Html.LabelFor(m => m.Email, "Correo electrónico")
+                    @Html.TextBoxFor(m => m.Email, new { @class = "input", placeholder = "correo@dominio.com", autocomplete = "email", required = "required", id = "email" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
 
-    <div class="mb-3">
-        @Html.LabelFor(m => m.Email, new { @class = "form-label" })
-        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "correo@dominio.com" })
-        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-    </div>
+                <div class="group">
+                    @Html.LabelFor(m => m.Password, "Contraseña")
+                    @Html.PasswordFor(m => m.Password, new { @class = "input", placeholder = "Mínimo 6 caracteres", autocomplete = "new-password", required = "required", id = "password" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
 
-    <div class="row">
-        <div class="col-md-6 mb-3">
-            @Html.LabelFor(m => m.Password, new { @class = "form-label" })
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Mínimo 6 caracteres" })
-            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                <div class="group">
+                    @Html.LabelFor(m => m.ConfirmPassword, "Confirmar contraseña")
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "input", placeholder = "Repite la contraseña", autocomplete = "new-password", required = "required", id = "confirmPassword" })
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="group">
+                    @Html.LabelFor(m => m.Rol, "Rol")
+                    @Html.DropDownListFor(
+                        m => m.Rol,
+                        (SelectList)ViewBag.Roles,
+                        "Seleccione…",
+                        new { @class = "input", id = "role" }  
+                    )
+                    @Html.ValidationMessageFor(m => m.Rol, "", new { @class = "text-danger" })
+                </div>
+
+                <button type="submit" class="btn" id="submitBtn">Registrar</button>
+
+                <p class="sub" style="text-align:center; margin-top:12px;">
+                    ¿Ya tienes cuenta? <a href="@Url.Action("Login","Account")">Inicia sesión</a>
+                </p>
+            }
         </div>
-        <div class="col-md-6 mb-3">
-            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "form-label" })
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Repite la contraseña" })
-            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
-        </div>
     </div>
 
-    <div class="mb-3">
-        @Html.LabelFor(m => m.Rol, new { @class = "form-label" })
-        @Html.DropDownListFor(m => m.Rol,
-            (SelectList)ViewBag.Roles,
-            "Seleccione…",
-            new { @class = "form-select" })
-        @Html.ValidationMessageFor(m => m.Rol, "", new { @class = "text-danger" })
-    </div>
-
-    <button type="submit" class="btn btn-success">Registrar</button>
-    <a class="btn btn-link" href="@Url.Action("Login","Account")">¿Ya tienes cuenta? Inicia sesión</a>
-}
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+    <script>
+        (function () {
+            var f = document.querySelector('form');
+            var b = document.getElementById('submitBtn');
+            if (f && b) {
+                f.addEventListener('submit', function () {
+                    b.disabled = true;
+                    b.textContent = 'Registrando…';
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

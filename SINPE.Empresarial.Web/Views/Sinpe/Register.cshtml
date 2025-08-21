@@ -43,7 +43,7 @@
                 <!-- Teléfono Origen -->
                 <div class="col-md-6">
                     <label for="TelefonoOrigen" class="form-label">Teléfono Origen</label>
-                    @Html.TextBoxFor(m => m.TelefonoOrigen, new { @class = "form-control form-control-lg", placeholder = "Ej: 88885555" })
+                    @Html.TextBoxFor(m => m.TelefonoOrigen, new { @class = "form-control form-control-lg", placeholder = "8888-5555", inputmode = "numeric", autocomplete = "off" })
                     @Html.ValidationMessageFor(m => m.TelefonoOrigen, "", new { @class = "text-danger small" })
                 </div>
 
@@ -57,7 +57,7 @@
                 <!-- Teléfono Destinatario -->
                 <div class="col-md-6">
                     <label for="TelefonoDestinatario" class="form-label">Teléfono Destinatario</label>
-                    @Html.TextBoxFor(m => m.TelefonoDestinatario, new { @class = "form-control form-control-lg", placeholder = "Ej: 88885555" })
+                    @Html.TextBoxFor(m => m.TelefonoDestinatario, new { @class = "form-control form-control-lg", placeholder = "8888-5555", inputmode = "numeric", autocomplete = "off" })
                     @Html.ValidationMessageFor(m => m.TelefonoDestinatario, "", new { @class = "text-danger small" })
                 </div>
 
@@ -71,7 +71,7 @@
                 <!-- Monto -->
                 <div class="col-md-6">
                     <label for="Monto" class="form-label">Monto</label>
-                    @Html.TextBoxFor(m => m.Monto, new { @class = "form-control form-control-lg", placeholder = "₡ Monto a transferir" })
+                    @Html.TextBoxFor(m => m.Monto, new { @class = "form-control form-control-lg", placeholder = "₡ Monto a transferir", inputmode = "numeric", autocomplete = "off" })
                     @Html.ValidationMessageFor(m => m.Monto, "", new { @class = "text-danger small" })
                 </div>
 
@@ -96,3 +96,63 @@
         }
     </div>
 </div>
+
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const onlyDigits = s => (s || "").replace(/\D/g, "");
+
+            function formatPhoneView(raw) {
+                const d = onlyDigits(raw).slice(0, 8);
+                return d.length > 4 ? d.slice(0, 4) + "-" + d.slice(4) : d;
+            }
+            function formatCRCView(raw) {
+                const d = onlyDigits(raw);
+                if (!d) return "";
+                return "₡ " + new Intl.NumberFormat("es-CR").format(parseInt(d, 10));
+            }
+
+            const telOrigen = document.getElementById("TelefonoOrigen");
+            const telDest = document.getElementById("TelefonoDestinatario");
+
+            [telOrigen, telDest].forEach(inp => {
+                if (!inp) return;
+
+                // teclado numérico en móviles
+                inp.setAttribute("inputmode", "numeric");
+                inp.setAttribute("autocomplete", "off");
+                inp.addEventListener("input", function () {
+                    const posEnd = this.selectionEnd;
+                    this.value = formatPhoneView(this.value);
+                });
+            });
+
+            const monto = document.getElementById("Monto");
+            if (monto) {
+                monto.setAttribute("inputmode", "numeric");
+                monto.setAttribute("autocomplete", "off");
+
+                monto.addEventListener("input", function () {
+                    // mantener sólo dígitos para el número interno y mostrar CRC
+                    this.value = formatCRCView(this.value);
+                });
+            }
+
+            const forms = document.getElementsByTagName("form");
+            Array.from(forms).forEach(f => {
+                f.addEventListener("submit", function () {
+                    if (telOrigen) telOrigen.value = onlyDigits(telOrigen.value);
+                    if (telDest) telDest.value = onlyDigits(telDest.value);
+                    if (monto) monto.value = onlyDigits(monto.value);
+                });
+            });
+
+            if (telOrigen) telOrigen.value = formatPhoneView(telOrigen.value);
+            if (telDest) telDest.value = formatPhoneView(telDest.value);
+            if (monto) monto.value = formatCRCView(monto.value);
+
+        });
+    </script>
+}

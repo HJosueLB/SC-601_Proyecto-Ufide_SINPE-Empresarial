@@ -267,8 +267,12 @@
     <Content Include="Content\css\CajasStyles\CajaEdit.css" />
     <Content Include="Content\css\CajasStyles\CajaRegister.css" />
     <Content Include="Content\css\ComercioStyles\ComercioRegister.css" />
+    <Content Include="Content\css\LoginStyles\login.css" />
     <Content Include="Content\css\MainStyles\main.css" />
+    <Content Include="Content\css\RegisterSyles\register.css" />
     <Content Include="Content\css\SharedStyles\layout.css" />
+    <Content Include="Content\img\background-1.jpg" />
+    <Content Include="Content\img\background-2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

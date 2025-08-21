@@ -7,6 +7,7 @@ using SINPE.Empresarial.Infrastructure.Services;
 using SINPE.Empresarial.Web.ApplicationModels.Mappers;
 
 using System;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
@@ -39,6 +40,13 @@ namespace SINPE.Empresarial.Web.Controllers
         // Método GET: Obtener todas las cajas de un comercio a corde al comercio seleccionado.
         public ActionResult Index(int idComercio)
         {
+            if (User.IsInRole("Cajero"))
+            {
+                var fijo = GetComercioIdFromClaim();
+                if (fijo == null) return new HttpStatusCodeResult(403);
+                idComercio = fijo.Value;
+            }
+
             var cajas = _cajaService.ObtenerCajasPorComercio(idComercio);
             ViewBag.IdComercio = idComercio;
 
@@ -51,6 +59,13 @@ namespace SINPE.Empresarial.Web.Controllers
         // Método GET: Registro de una nueva caja para un comercio específico.
         public ActionResult Register(int idComercio)
         {
+            if (User.IsInRole("Cajero"))
+            {
+                var fijo = GetComercioIdFromClaim();
+                if (fijo == null) return new HttpStatusCodeResult(403);
+                idComercio = fijo.Value; // forzar su comercio
+            }
+
             var caja = new Caja { IdComercio = idComercio };
             return View(caja);
         }
@@ -60,29 +75,31 @@ namespace SINPE.Empresarial.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(Caja caja)
         {
+            if (User.IsInRole("Cajero"))
+            {
+                var fijo = GetComercioIdFromClaim();
+                if (fijo == null) return new HttpStatusCodeResult(403);
+                caja.IdComercio = fijo.Value; // forzar su comercio
+            }
+
             try
             {
                 if (ModelState.IsValid)
                 {
                     _cajaService.Registrar(caja);
 
-                    // DTO para la bitácora
                     var cajaDTO = CajaMapper.ToDTO(caja);
-
-                    // Método asincrónico await: Registar evento de creación de comercio
                     await _bitacoraService.RegistrarEvento("Caja", TiposDeEvento.Registrar,
-                        $"Registro - Nueva caja: {cajaDTO.IdCaja} en comercio: {cajaDTO.ComercioId}", datosPosteriores: cajaDTO);
-
+                        $"Registro - Nueva caja: {cajaDTO.IdCaja} en comercio: {cajaDTO.ComercioId}",
+                        datosPosteriores: cajaDTO);
 
                     return RedirectToAction("Index", new { idComercio = caja.IdComercio });
                 }
             }
             catch (Exception ex)
             {
-                // Método asincrónico await: Registar evento en caso de error
                 await _bitacoraService.RegistrarEvento("Caja", TiposDeEvento.Error,
                     $"Error - Registro caja: {ex.Message}", datosPosteriores: caja, stackTrace: ex.ToString());
-
                 ModelState.AddModelError("", ex.Message);
             }
 
@@ -93,8 +110,14 @@ namespace SINPE.Empresarial.Web.Controllers
         public ActionResult Editar(int id)
         {
             var caja = _cajaService.ObtenerPorId(id);
-            if (caja == null)
-                return HttpNotFound();
+            if (caja == null) return HttpNotFound();
+
+            if (User.IsInRole("Cajero"))
+            {
+                var fijo = GetComercioIdFromClaim();
+                if (fijo == null || caja.IdComercio != fijo.Value)
+                    return new HttpStatusCodeResult(403);
+            }
 
             return View("Edit", caja);
         }
@@ -104,33 +127,36 @@ namespace SINPE.Empresarial.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Editar(Caja caja)
         {
+            if (User.IsInRole("Cajero"))
+            {
+                var fijo = GetComercioIdFromClaim();
+                if (fijo == null || caja.IdComercio != fijo.Value)
+                    return new HttpStatusCodeResult(403); // no puede moverla a otro comercio
+            }
+
             try
             {
                 if (ModelState.IsValid)
                 {
-                    // Obtener datos anteriores
                     var cajaOriginal = _cajaService.ObtenerPorId(caja.IdCaja);
                     var dtoAntes = CajaMapper.ToDTO(cajaOriginal);
 
                     _cajaService.Actualizar(caja);
 
-                    // Obtener datos nuevos
                     var cajaActualizada = _cajaService.ObtenerPorId(caja.IdCaja);
                     var dtoDespues = CajaMapper.ToDTO(cajaActualizada);
 
-                    // Método asincrónico await: Registar evento de edición de comercio
                     await _bitacoraService.RegistrarEvento("Caja", TiposDeEvento.Editar,
-                        $"Edición - Caja con ID: {caja.IdCaja} en comercio: {caja.IdComercio}", datosAnteriores: dtoAntes, datosPosteriores: dtoDespues);
+                        $"Edición - Caja con ID: {caja.IdCaja} en comercio: {caja.IdComercio}",
+                        datosAnteriores: dtoAntes, datosPosteriores: dtoDespues);
 
                     return RedirectToAction("Index", new { idComercio = caja.IdComercio });
                 }
             }
             catch (Exception ex)
             {
-                // Método asincrónico await: Registar evento en caso de error
                 await _bitacoraService.RegistrarEvento("Caja", TiposDeEvento.Error,
                     $"Error - Editar caja: {ex.Message}", datosPosteriores: caja, stackTrace: ex.ToString());
-
                 ModelState.AddModelError("", ex.Message);
             }
 
@@ -140,10 +166,19 @@ namespace SINPE.Empresarial.Web.Controllers
         // Método GET: Seleccionar un comercio para mostrar cajas asociadas.
         public ActionResult SeleccionComercio()
         {
-            var comercioService = new ComercioService(new ComercioRepository());
-            var comercios = comercioService.ObtenerTodos();
-            return View(comercios);
+            if (User.IsInRole("Administrador"))
+            {
+                var comercios = _comercioService.ObtenerTodos();
+                return View(comercios);
+            }
+
+            // Cajero: no elige, va directo a su comercio
+            var fijo = GetComercioIdFromClaim();
+            if (fijo == null) return new HttpStatusCodeResult(403);
+
+            return RedirectToAction("Index", new { idComercio = fijo.Value });
         }
+
 
         // Llamar servicio de SINPE para consultar transacciones relacionadas
         private readonly SinpeService _sinpeService;
@@ -156,5 +191,12 @@ namespace SINPE.Empresarial.Web.Controllers
             return View(transacciones);
         }
 
+        private int? GetComercioIdFromClaim()
+        {
+            var ci = User.Identity as ClaimsIdentity;
+            // lee "commerceId" y, por compatibilidad, "ComercioId" si algún día existe
+            var val = ci?.FindFirst("commerceId")?.Value ?? ci?.FindFirst("ComercioId")?.Value;
+            return int.TryParse(val, out var id) ? id : (int?)null;
+        }
     }
 }

@@ -19,75 +19,74 @@
     <!-- Accesos rápidos -->
     <div class="row g-4 justify-content-center">
 
-        <!-- Comercios -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-shop display-4 mb-3 text-primary"></i>
-                <h4 class="fw-semibold">Comercios</h4>
-                <p class="text-muted small">Gestiona todos los comercios registrados en la plataforma.</p>
-                <a href="@Url.Action("Index", "Comercio")" class="btn btn-primary btn-sm mt-2">Ir a Comercios</a>
+        <!-- SOLO ADMIN -->
+        @if (User.IsInRole("Administrador"))
+        {
+            <!-- Comercios -->
+            <div class="col-md-4">
+                <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                    <i class="bi bi-shop display-4 mb-3 text-primary"></i>
+                    <h4 class="fw-semibold">Comercios</h4>
+                    <p class="text-muted small">Gestiona los comercios registrados.</p>
+                    <a href="@Url.Action("Index", "Comercio")" class="btn btn-primary btn-sm mt-2">Ir a Comercios</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Cajas -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-credit-card-2-front display-4 mb-3 text-success"></i>
-                <h4 class="fw-semibold">Cajas</h4>
-                <p class="text-muted small">Consulta y administra las cajas asociadas a cada comercio.</p>
-                <a href="@Url.Action("SeleccionComercio", "Caja")" class="btn btn-success btn-sm mt-2">Ver Cajas</a>
+            <!-- SINPE -->
+            <div class="col-md-4">
+                <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                    <i class="bi bi-cash-stack display-4 mb-3 text-warning"></i>
+                    <h4 class="fw-semibold">SINPE</h4>
+                    <p class="text-muted small">Registra y consulta las transacciones SINPE del sistema.</p>
+                    <a href="@Url.Action("Register", "Sinpe")" class="btn btn-warning text-white btn-sm mt-2">Transacciones</a>
+                </div>
             </div>
-        </div>
 
-        <!-- SINPE -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-cash-stack display-4 mb-3 text-warning"></i>
-                <h4 class="fw-semibold">SINPE</h4>
-                <p class="text-muted small">Registra y consulta las transacciones SINPE del sistema.</p>
-                <a href="@Url.Action("Register", "Sinpe")" class="btn btn-warning text-white btn-sm mt-2">Transacciones</a>
+            <!-- Reportes -->
+            <div class="col-md-4">
+                <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                    <i class="bi bi-bar-chart display-4 mb-3 text-info"></i>
+                    <h4 class="fw-semibold">Reportes</h4>
+                    <p class="text-muted small">Genera reportes mensuales y consulta estadísticas.</p>
+                    <a href="@Url.Action("Index", "Reporte")" class="btn btn-info text-white btn-sm mt-2">Ver Reportes</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Reportes -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-bar-chart display-4 mb-3 text-info"></i>
-                <h4 class="fw-semibold">Reportes</h4>
-                <p class="text-muted small">Genera reportes mensuales y consulta estadísticas.</p>
-                <a href="@Url.Action("Index", "Reporte")" class="btn btn-info text-white btn-sm mt-2">Ver Reportes</a>
+            <!-- Bitácora -->
+            <div class="col-md-4">
+                <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                    <i class="bi bi-journal-text display-4 mb-3 text-dark"></i>
+                    <h4 class="fw-semibold">Bitácora</h4>
+                    <p class="text-muted small">Consulta los registros de auditoría del sistema.</p>
+                    <a href="@Url.Action("Index", "Bitacora")" class="btn btn-dark btn-sm mt-2">Ver Bitácora</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Configuración -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-gear-fill display-4 mb-3 text-secondary"></i>
-                <h4 class="fw-semibold">Configuración</h4>
-                <p class="text-muted small">Ajusta comisiones y configuraciones por comercio.</p>
-                <a href="@Url.Action("Index", "Configuracion")" class="btn btn-secondary btn-sm mt-2">Configurar</a>
+            <!-- Usuarios -->
+            <div class="col-md-4">
+                <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                    <i class="bi bi-people display-4 mb-3 text-purple"></i>
+                    <h4 class="fw-semibold">Usuarios</h4>
+                    <p class="text-muted small">Consulta los usuarios registrados en el sistema.</p>
+                    <a href="@Url.Action("Index", "Usuario")" class="btn btn-dark btn-sm mt-2">Ver Usuarios</a>
+                </div>
             </div>
-        </div>
+        }
 
-        <!-- Bitácora -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-journal-text display-4 mb-3 text-dark"></i>
-                <h4 class="fw-semibold">Bitácora</h4>
-                <p class="text-muted small">Consulta los registros de auditoría del sistema.</p>
-                <a href="@Url.Action("Index", "Bitacora")" class="btn btn-dark btn-sm mt-2">Ver Bitácora</a>
+        <!-- Cajero -->
+        @if (User.IsInRole("Cajero") || User.IsInRole("Administrador"))
+        {
+            <!-- Cajas -->
+            <div class="col-md-4">
+                <div class="dashboard-card text-center shadow-sm p-4 rounded">
+                    <i class="bi bi-credit-card-2-front display-4 mb-3 text-success"></i>
+                    <h4 class="fw-semibold">Cajas</h4>
+                    <p class="text-muted small">Administra las cajas asociadas a cada comercio.</p>
+                    <a href="@Url.Action("SeleccionComercio", "Caja")" class="btn btn-success btn-sm mt-2">Ver Cajas</a>
+                </div>
             </div>
-        </div>
-
-        <!-- Usuarios -->
-        <div class="col-md-4">
-            <div class="dashboard-card text-center shadow-sm p-4 rounded">
-                <i class="bi bi-people display-4 mb-3 text-purple"></i>
-                <h4 class="fw-semibold">Usuarios</h4>
-                <p class="text-muted small">Consulta los usuarios registrados en el sistema.</p>
-                <a href="@Url.Action("Index", "Usuario")" class="btn btn-dark btn-sm mt-2">Ver Usuarios</a>
-            </div>
-        </div>
+        }
 
     </div>
 </div>
+
