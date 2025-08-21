@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Data.Entity;                           
+using System.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using SINPE.Empresarial.Infrastructure.Data;
 using SINPE.Empresarial.Domain.SinpeDomain.Entities;
 
 namespace SINPE.Empresarial.API.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize] // Requiere autenticación JWT para todos los endpoints
     public class SinpeController : ControllerBase
     {
         private readonly SINPE_Empresarial_DB _db;
@@ -125,14 +127,14 @@ namespace SINPE.Empresarial.API.Controllers
 
                 var nuevo = new Sinpe
                 {
-                    TelefonoOrigen = body.TelefonoOrigen,               
-                    NombreOrigen = body.NombreOrigen,                   
-                    TelefonoDestinatario = body.TelefonoDestinatario,   
-                    NombreDestinatario = body.NombreDestinatario,       
-                    Monto = body.Monto,                                 
-                    Descripcion = body.Descripcion,                     
-                    FechaDeRegistro = DateTime.Now,                     
-                    Estado = false                                      
+                    TelefonoOrigen = body.TelefonoOrigen,
+                    NombreOrigen = body.NombreOrigen,
+                    TelefonoDestinatario = body.TelefonoDestinatario,
+                    NombreDestinatario = body.NombreDestinatario,
+                    Monto = body.Monto,
+                    Descripcion = body.Descripcion,
+                    FechaDeRegistro = DateTime.Now,
+                    Estado = false
                 };
 
                 _db.Sinpe.Add(nuevo);
